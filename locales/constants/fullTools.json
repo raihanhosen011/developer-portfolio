@@ -1,0 +1,96 @@
+[
+  {
+    "name": "HTML",
+    "icon": "html",
+    "mask": true
+  },
+  {
+    "name": "CSS",
+    "icon": "css",
+    "mask": true
+  },
+  {
+    "name": "JavaScript",
+    "icon": "js",
+    "mask": true
+  },
+  {
+    "name": "TypeScript",
+    "icon": "ts",
+    "mask": true
+  },
+  {
+    "name": "React",
+    "icon": "react"
+  },
+  {
+    "name": "Figma",
+    "icon": "figma"
+  },
+  {
+    "name": "Git",
+    "icon": "git"
+  },
+  {
+    "name": "Notion",
+    "icon": "notion",
+    "mask": true
+  },
+  {
+    "name": "Tailwind CSS",
+    "icon": "tailwind"
+  },
+  {
+    "name": "Next.js",
+    "icon": "nextjs",
+    "mask": true
+  },
+  {
+    "name": "Node.js",
+    "icon": "nodejs"
+  },
+  {
+    "name": "SQL Server",
+    "icon": "sqlserver"
+  },
+  {
+    "name": "Oracle Database",
+    "icon": "oracle"
+  },
+  {
+    "name": "MySQL",
+    "icon": "mysql"
+  },
+  {
+    "name": "MongoDB",
+    "icon": "mongodb"
+  },
+  {
+    "name": "Jest",
+    "icon": "jest",
+    "mask": true
+  },
+  {
+    "name": "Python",
+    "icon": "python"
+  },
+  {
+    "name": "Java",
+    "icon": "java"
+  },
+  {
+    "name": "Spring Framework",
+    "icon": "spring",
+    "mask": true
+  },
+  {
+    "name": "Angular",
+    "icon": "angular",
+    "mask": true
+  },
+  {
+    "name": "Firebase",
+    "icon": "firebase",
+    "mask": true
+  }
+]

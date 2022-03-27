@@ -1,0 +1,19 @@
+{
+  "navdata" : {
+     "home" : "Home",
+     "about" : "About",
+     "skills" : "Skills",
+     "projects" : "Projects",
+     "partners" : "Partners",
+     "testmonials" : "Testmonials",
+     "contact" : "Contact"
+  },
+  "herodata" : {
+    "intro" : "Hi",
+    "wither" : "I am ",
+    "name" : "Raihan Hosen.",
+    "subtitle" : "web-developer",
+    "pera": "I'm a Tunisian based web designer & front‑end developer focused on crafting clean & user‑friendly experiences, I am passionate about building excellent software that improves the lives of those around me.",
+    "button" : "more about me"   
+  }
+}

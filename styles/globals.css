@@ -1,16 +1,173 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+/*==================== GOOGLE FONTS ====================*/
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,400;1,600;1,700&display=swap');
+
+/*==================== VARIABLES CSS ====================*/
+:root {
+  /*========== Colors ==========*/
+  --first-color: hsl(207, 73%, 61%);
+  --first-color-alt: hsl(207, 57%, 53%);
+  --first-color-lighter: hsl(207, 92%, 85%);
+  
+  --title-color: hsl(207, 8%, 15%);
+
+  --text-color: hsl(207, 8%, 45%);
+  --text-color-light: hsl(207, 8%, 65%);
+
+  --input-color: hsl(207, 0%, 87%);
+  --body-color: hsl(207, 0%, 95%);
+  --body-white: hsl(207, 60%, 100%);
+
+  --scroll-bar-color: hsl(207, 12%, 90%);
+  --scroll-thumb-color: hsl(207, 12%, 80%);
+
+  --container-color: #fff;
+
+  /*========== Font and typography ==========*/
+  --body-font: "Poppins", sans-serif !important;
+
+  /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+
+  --radius-sm: 5px;
+
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*========== Margenes Bottom ==========*/
+  /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-7: 0.7rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+/* Font size for large devices */
+@media screen and (min-width: 968px) {
+  :root {
+    --h1-font-size: 2.5rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
 }
 
+/*========== Variables Dark theme ==========*/
+body.dark-theme {
+  --first-color-second: hsl(207, 30%, 8%);
+  --title-color: hsl(207, 8%, 95%);
+  --text-color: hsl(207, 8%, 75%);
+  --input-color: hsl(207, 17%, 19%);
+  --body-color: hsl(208, 28%, 12%);
+  --body-white: hsl(210deg 8% 20%);
+  --container-color: hsl(207, 29%, 16%);
+}
+
+
+/*==================== BASE ====================*/
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: rgb(6, 115, 240);
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input, textarea{
+  border: none;
+  outline: none;
+  font-family: var(--body-font);
+}
+
+body.dark-theme .logo{
+  -webkit-filter: grayscale(1) invert(1);
+  filter: grayscale(1) invert(1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 550;
+  color: var(--title-color);
+}
+strong{
+  font-weight: 600;
+}
+button, input, textarea{
+  font-family: var(--body-font);
+}
+body.bn{
+  font-family: 'Hind Siliguri', sans-serif !important;
+}
+
+canvas{
+  display: none;
+}
+canvas.c {
+  display: block;
+  position: absolute;
+}
+
+::placeholder{
+  color: rgb(122, 122, 122);
+}
+
+
+/* ========= HERO ======= */
+.hero-model{
+  background-image: url('../public/images/model/raihan-hosen.png');
+}
+.hero-name{
+  background-image: url('../public/images/back.png');
+}
+
+/*========== SCROLL BAR ==========*/
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: var(--scroll-bar-color);
+  border-radius: 0.5rem;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-thumb-color);
+  border-radius: 0.5rem;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--text-color-light);
+}
+

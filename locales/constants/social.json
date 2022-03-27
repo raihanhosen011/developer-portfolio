@@ -1,0 +1,30 @@
+[
+  {
+    "icon" : "email",
+    "href" : "mailto: raihanhosen011@gmail.com"
+  },
+  {
+    "icon" : "phone",
+    "href" : "tel: +880 16091 97034"
+  },
+  {
+    "icon" : "facebook",
+    "href" : "https://www.facebook.com/raihanhosen01"
+  },
+  {
+    "icon" : "linkedin",
+    "href" : "https://www.linkedin.com/in/raihanhosen01/"
+  },
+  {
+    "icon" : "twitter",
+    "href" : "https://twitter.com/raihanhosen01"
+  },
+  {
+    "icon" : "github",
+    "href" : "https://github.com/raihanhosen011"
+  },
+  {
+    "icon" : "fiverr",
+    "href" : "https://www.fiverr.com/raihanhosen001"
+  }
+]

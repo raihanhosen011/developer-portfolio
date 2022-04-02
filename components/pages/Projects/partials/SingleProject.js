@@ -1,4 +1,6 @@
 import React from 'react'
+import Image from 'next/image'
+
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { UilArrow, UilDesktop } from '@iconscout/react-unicons'
@@ -32,7 +34,7 @@ function SignleProject({ title, image, tools, demo, code }) {
     <SingleProjectContainer>
        <SingleProjectHead>
           <Carousel responsive={responsive} autoPlay={false} >
-             {image.map((_, index) => <img key={index} src={`/images/mockup/${_}.png`} alt='img' />)}
+             {image.map((_, index) => <Image key={index} src={`/images/mockup/${_}.png`} width={1} height={.62} layout='responsive' alt='img' />)}
           </Carousel>
        </SingleProjectHead>   
 

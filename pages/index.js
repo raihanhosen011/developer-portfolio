@@ -30,7 +30,7 @@ export default function Index({ content }) {
 export const getStaticProps = ({ locale }) => {
   return {
     props: {
-      content: locales[locale],
+      content: locales.en,
     },
   };
 };

@@ -35,7 +35,8 @@ export const SinglePartnerStyle = styled.a`
     display: block;
     max-width: 135px;
     padding: 10px;
-
+    min-width: 160px;
+    
     img{
        width: 100%;
        height: 100%;

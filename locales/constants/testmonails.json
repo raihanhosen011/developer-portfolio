@@ -1,0 +1,58 @@
+[
+    {
+        "slug" : 0,  
+        "ownerImg" : "safirali",
+        "companyImg" : "hamper",
+        "name" : "safir ali",
+        "position" : "CEO of Hamper",
+        "review" : "It was amazing working with Nico, he's very proactive and works together to finish the projects as quickly as possible. Amazing service!"  
+      },
+      {
+        "slug" : 1,  
+        "ownerImg" : "tarunbaur",
+        "companyImg" : "era-swap",
+        "name" : "Tarun Baur",
+        "position" : "Founder Era Swap DAO",
+        "review" : "Wonderful Person to work with. :-) Very Efficient, Adjusting and Cooperative. One Must try assignment with him."  
+      },
+      {
+        "slug" : 2,  
+        "ownerImg" : "hashtagme_fyi",
+        "companyImg" : "hashtagme_fyi",
+        "name" : "Ahsan Ahmad Yousuf",
+        "position" : "from fiverr",
+        "review" : "Raihan worked with passion and his expertise helped me a lot. Gladly again."  
+      },
+      {
+        "slug" : 3,  
+        "ownerImg" : "karishmasukhwan",
+        "companyImg" : "karishmasukhwan",
+        "name" : "Karishma Sukhwani",
+        "position" : "from fiverr",
+        "review" : "He is a rising talent definitely, cooperative, and delivered quality code along with discussed deadlines. Would love to work with him again, and see his upgraded version!"  
+      },
+      {
+        "slug" : 4,  
+        "ownerImg" : "tayyibbasbunar",
+        "companyImg" : "tayyibbasbunar",
+        "name" : "tayyibbasbunar",
+        "position" : "from Fiverr",
+        "review" : "Very good job done"  
+      },
+      {
+        "slug" : 5,  
+        "ownerImg" : "philp-k-dick",
+        "companyImg" : "philp-k-dick",
+        "name" : "Philip K Dick", 
+        "position" : "From Upwork",
+        "review" : "Pro efficient freelancers , he is quick to respond to any message and provide instant edits for the work ⭐⭐⭐⭐⭐"  
+      },
+      {
+        "slug" : 6,  
+        "ownerImg" : "shuwaib",
+        "companyImg" : "shuwaib",
+        "name" : "Shuwaibur rahman",
+        "position" : "from Freelancer.com",
+        "review" : "Very fast and has a good eye for design"  
+      }
+]

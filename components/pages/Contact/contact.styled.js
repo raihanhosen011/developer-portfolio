@@ -72,4 +72,9 @@ export const ContactForm = styled.form`
     margin-bottom: 1.5rem;  
     min-height: 150px;
   }
+
+  button{
+    background: transparent;
+    border: none;
+  }
 `

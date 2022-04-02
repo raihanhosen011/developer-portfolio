@@ -1,4 +1,5 @@
 import React from 'react'
+import emailjs from 'emailjs-com'
 import { UilMap, UilEnvelopeCheck, UilPhoneVolume, UilMessage } from '@iconscout/react-unicons'
 
 import { fadeInUp } from '@components/animations'
@@ -10,6 +11,18 @@ import { CaptionIconBtn } from '@components/shared/Icon'
 import withTransition from '@components/animations/withTransition'
 
 function Index() {
+
+  function sendEmail(e){
+      e.preventDefault()
+
+      emailjs.sendForm('service_nuzxzdb', 'template_6c4mw7w', e.target, 'LgCMbndsfm9wPoOgO')
+      .then(() => {
+          alert("Your message has been successfully sent to Raihan Hosen.")
+          location.replace('/')
+      })
+      .catch(() => alert("Email not sent! please try again."))
+  }
+
   return (
     <ContactContainer>
        <ContactWrapper as={motion.div} {...fadeInUp} >
@@ -21,7 +34,7 @@ function Index() {
 
             <ContactContent>
                 <ContactInformation>
-                   <h3>DON'T BE SHY !</h3>  
+                   <h3>DON&apos;T BE SHY !</h3>  
                    <p>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
 
                    <p className='icon-text' >
@@ -43,13 +56,13 @@ function Index() {
                    </p> 
                 </ContactInformation>
 
-                <ContactForm>
+                <ContactForm onSubmit={sendEmail} >
                    <input name='name' type="text" placeholder='ENTER YOUR NAME' required /> 
-                   <input name='email' type="email" placeholder='ENTER YOUR EMAIL' required /> 
+                   <input name='user_email' type="email" placeholder='ENTER YOUR EMAIL' required /> 
                    <input name='subject' type="text" placeholder='ENTER YOUR SUBJECT' required />
                    <textarea name='message' placeholder='ENTER YOUR MESSAGE' required />
 
-                   <CaptionIconBtn icon={<UilMessage />} caption='send message' /> 
+                   <button type='submit' ><CaptionIconBtn icon={<UilMessage />} caption='send message' /> </button> 
                 </ContactForm> 
             </ContactContent>
 

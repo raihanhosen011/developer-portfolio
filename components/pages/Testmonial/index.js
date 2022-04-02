@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useEffect, useState} from 'react'
 
 import { fadeInUp } from '@components/animations'
 import { motion } from 'framer-motion'
@@ -6,23 +6,36 @@ import { motion } from 'framer-motion'
 import { ClientDetails, TestmonialClients, TestmonialContainer, TestmonialContent, TestmonialTexts, TestmonialWrapper, TextsBody, TextsHead } from './testmonial.styled'
 import Avatar from './partials/Avatar'
 import ClientSlug from './partials/ClientSlug'
-import data from './partials/testmonialData.json'
 
 import { SectionTitle } from '@components/shared/Global/global.style'
 import withTransition from '@components/animations/withTransition'
+import { useSelector } from 'react-redux'
+
+let initial = {
+   slug : 0,  
+   ownerImg : "safirali",
+   companyImg : "hamper",
+   name : "safir ali",
+   position : "CEO of Hamper",
+   review : "It was amazing working with Nico, he's very proactive and works together to finish the projects as quickly as possible. Amazing service!"  
+ }
 
 function Index() {
-  const [texts, setTexts] = useState(data[0])
+  const [texts, setTexts] = useState(initial)
   const [activeIndex, setActiveIndex] = useState(0)
 
+  const selector = useSelector(state => state)
+  const { testmonails } = selector.data
+
   function handleShow(index){
-    setTexts(data[index])
+    setTexts(testmonails[index])
     setActiveIndex(index ? index : 0)
     return;
   }
 
   return (
     <TestmonialContainer>
+       {testmonails &&
         <TestmonialWrapper as={motion.div} {...fadeInUp} >
             
             <SectionTitle>
@@ -38,7 +51,7 @@ function Index() {
                        <p> {texts?.position} </p>
                      </ClientDetails>
 
-                     <Avatar src={texts?.avatar} />
+                     <Avatar src={texts?.ownerImg} />
                   </TextsHead>
 
                   <TextsBody>
@@ -47,12 +60,12 @@ function Index() {
                </TestmonialTexts>
 
                <TestmonialClients>
-                  {data.map(({ avatar, slug }) => 
+                  {testmonails.map(({ slug, companyImg }) => 
                       <ClientSlug 
                          key={slug} 
                          customClass={activeIndex === slug && 'active'}
-                         src={avatar} 
                          click={() => handleShow(slug)} 
+                         companyImg={companyImg}
                       />
                   )}
                </TestmonialClients>
@@ -60,7 +73,8 @@ function Index() {
                <img src='/images/quote.png' alt='quote image' className='testmonial-object' />
             </TestmonialContent>
 
-        </TestmonialWrapper>
+        </TestmonialWrapper>       
+       }
     </TestmonialContainer>
   )
 }

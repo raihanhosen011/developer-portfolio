@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@iconscout/react-unicons": "^1.1.6",
+    "emailjs-com": "^3.2.0",
     "framer-motion": "^6.2.8",
     "gsap": "^3.9.1",
     "jquery": "^3.6.0",

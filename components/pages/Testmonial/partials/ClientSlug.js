@@ -1,10 +1,12 @@
 import React from 'react'
+import Image from 'next/image'
+
 import { StyledClientSlug } from '../testmonial.styled'
 
-function ClientSlug({ src, customClass, click }) {
+function ClientSlug({ companyImg, click, customClass }) {
   return (
     <StyledClientSlug className={customClass} onClick={click} >
-       <img src={`/images/partner/${src}.png`} alt='client slug image' /> 
+       <Image src={`/images/partner/${companyImg}.png`} width={1} height={1} layout='responsive' alt='client slug image' /> 
     </StyledClientSlug>
   )
 }

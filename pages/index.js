@@ -17,11 +17,10 @@ import useLocale from 'hooks/useLocale';
 
 export default function Index({ content }) {
   const dispatch = useDispatch()
-  const [locale, toggleLocale] = useLocale()
 
   useEffect(() => {
     dispatch({ type : "GET_DATA", payload : content })
-  }, [content, locale])
+  }, [content, dispatch])
 
   return (
     <Hero />

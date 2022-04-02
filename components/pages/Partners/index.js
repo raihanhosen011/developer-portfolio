@@ -31,7 +31,7 @@ function Index() {
                   </PartnerTexts>  
 
                   <PartnerLogos>
-                     {partnerInfo.map(({ url, img }) => <SinglePartner name={img} to={url} />)}
+                     {partnerInfo.map(({ url, img }) => <SinglePartner key={url} name={img} to={url} />)}
                   </PartnerLogos>  
                </PartnerConent>
 

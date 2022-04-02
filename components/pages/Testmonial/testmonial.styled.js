@@ -69,6 +69,11 @@ export const TestmonialClients = styled.div`
   .active {
     transform: scale(1.2);
     opacity: 1;
+
+    img{
+      -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(0%);
+    }
   }
 
   @media (max-width: 768px){
@@ -91,6 +96,16 @@ export const StyledClientSlug = styled.div`
   background: var(--body-third);
   border-radius: 7px;
   cursor: pointer;
-  opacity: 0.6;
+  opacity: 0.4;
   transition: .4s;
+
+  span{
+    width: 78px !important;
+
+    img{
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
+      object-fit: contain;
+    }
+  }
 `

@@ -51,7 +51,7 @@ function Index() {
 
                 <ExperienceCount>
                    {aboutdata.count.map(({ num, title }) => 
-                      <CountColumn>
+                      <CountColumn key={num} > 
                           <h1> {num} </h1>
                           <p> {title} </p>
                       </CountColumn>                   

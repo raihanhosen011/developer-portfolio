@@ -36,7 +36,7 @@ function Index(){
                     </div>
 
                     <p>{ herodata.pera }</p>
-                    <CaptionIconBtn caption={herodata.button} icon={<UilArrowRight />} /> 
+                    <CaptionIconBtn caption={herodata.button} to='/about' icon={<UilArrowRight />} /> 
 
                     <Social social={social} />
                 </HeroContent>              

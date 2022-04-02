@@ -13,7 +13,7 @@ function Index() {
        <ul>
           {data.navdata && Object.entries(data.navdata).map(([ key, text ]) => 
              <NavItem key={key} >
-                <Link href={`/${key == 'home' ? '/' : key}`} > 
+                <Link href={`/${key == 'home' ? '/' : key}`} passHref> 
                    <HoverIconBtn icon={icons[key]} caption={text} />                
                 </Link>
              </NavItem>    

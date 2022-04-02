@@ -13,10 +13,10 @@ function Index() {
   useEffect(() => {
     if(mood === 'dark'){
       document.body.classList.add('dark-theme')
-      document.getElementsByTagName('canvas')[0].classList.add('c')
+      // document.getElementsByTagName('canvas')[0].classList.add('c')
     }else{
       document.body.classList.remove('dark-theme')
-      document.getElementsByTagName('canvas')[0].classList.remove('c')
+      // document.getElementsByTagName('canvas')[0].classList.remove('c')
     }
   }, [mood])
 

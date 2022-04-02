@@ -8,26 +8,25 @@
 ------------------------------------------------
 ==================================================*/
 
-import Layout from '@components/Layout'
-import { Hero, About } from '@components/Home'
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 
+import Hero from '@components/pages/Hero'
 import locales from '../locales';
+import useLocale from 'hooks/useLocale';
 
 export default function Index({ content }) {
-  const {
-    navdata,
-    herodata,
-    social
-  } = content
+  const dispatch = useDispatch()
+  const [locale, toggleLocale] = useLocale()
+
+  useEffect(() => {
+    dispatch({ type : "GET_DATA", payload : content })
+  }, [content, locale])
 
   return (
-    <Layout navData={navdata} >
-       <Hero herodata={herodata} social={social} />
-       {/* <About /> */}
-    </Layout>
+    <Hero />
   )
 }
-
 
 export const getStaticProps = ({ locale }) => {
   return {

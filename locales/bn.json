@@ -4,8 +4,6 @@
        "about" : "আমি",
        "skills" : "দক্ষতা",
        "projects" : "প্রজেক্ট",
-       "partners" : "ক্রেতা",
-       "testmonials" : "রিভিউ",
        "contact" : "যোগাযোগ"
     },
     "herodata" : {
@@ -15,5 +13,41 @@
       "subtitle" : "একজন ওয়েব ডেভেলপার",
       "pera": "আমি একজন ওয়েব ডিজাইনার এবং ফ্রন্ট-এন্ড ডেভেলপার। আমি পরিষ্কার এবং ব্যবহারকারী-বান্ধব অভিজ্ঞতা তৈরির উপর ফোকাস করেছি, আমি চমৎকার সফ্টওয়্যার তৈরি করতে আগ্রহী যা আমার চারপাশের লোকদের জীবনকে উন্নত করে।.",
       "button" : "আমার সম্পর্কে আরো জানুন"   
+    },
+    "aboutdata" : {
+      "sectiontitle" : "আমার সম্পর্কে",
+      "description" : "অভিপ্রায়ের জগতের জন্য সফ্টওয়্যার তৈরি করা এমন একটি বিষয় যা সম্পর্কে আমি উত্সাহী এবং আমি সকলের জন্য অভিপ্রায়ের বিশ্বকে সহজ এবং সাশ্রয়ী করতে নিবেদিত৷ অভিপ্রায়ের জগতের জন্য সফ্টওয়্যার তৈরি করা এমন একটি বিষয় যা সম্পর্কে আমি উত্সাহী এবং আমি সকলের জন্য অভিপ্রায়ের বিশ্বকে সহজ এবং সাশ্রয়ী করতে নিবেদিত৷" ,
+      "quote" : "আমি একজন ওয়েব ডেভেলপার যিনি কোড এবং লোকেদের বিষয়ে যত্নশীল.",
+      "personalinfo" : {
+          "tabtitle": "personal info",
+          "first name" : "রায়হানে",
+          "last name" : "হোসেন",
+          "age" : "১৮ বছর",
+          "nationality" : "বাংলাদেশী",
+          "freelance" : "available",
+          "address" : "চাঁদপুর",
+          "phone" : "+৮৮0 ১৬০৯১ ৯৭০৩৪",
+          "email" : "raihanhosen011@gmail.com",
+          "github" : "raihanhosen011",
+          "language" : "ইংরেজী, বাংলা"
+      },
+      "count" : [
+          {"num" : "১.৯", "title" : "বছরের অভিজ্ঞতা"},
+          {"num" : "৭৭", "title" : "প্রকল্প সম্পন্ন হয়েছে"},
+          {"num" : "১০", "title" : "খুশি গ্রাহক"},
+          {"num" : "২", "title" : "পুরস্কার বিজয়"}
+      ]
+    },
+    "skills" : {
+      "sectiontitle" : "আমার অভিজ্ঞতা"
+    },
+    "projects" : {
+        "sectiontitle" : "projects",
+        "description" : "My projects makes use of vast variety of latest technology tools. My best experience is to create Data Science projects and deploy them to web applications using cloud infrastructure."
+    },
+    "partners" : {
+        "sectiontitle" : "partners",
+        "title" : "We Work With the Best Partners",
+        "desc" : "While we are at the forefront of and specialize in design-build, we are very familiar with a number of delivery methods and are confident we can find the process that will best help you meet your goals."
     }
   }

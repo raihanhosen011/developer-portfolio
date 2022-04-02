@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
+export const StyledSmallIcon = styled.div`
+  width: 25px;
+  height: 25px;
+`
+
 export const StyledIcon = styled.div`
     width: 39px;
     height: 39px;
@@ -42,6 +47,7 @@ export const StyledCaptionIcon = styled.div`
   span{
     margin-right: 10px;
     text-transform: uppercase;
+    color: var(--title-color) !important;      
   }
 
   &:before{
@@ -64,7 +70,6 @@ export const StyledCaptionIcon = styled.div`
     &:before{
       transform: scaleX(1);
     }
-    color: white;
   }
 
   ${StyledIcon}{

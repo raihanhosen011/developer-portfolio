@@ -1,96 +1,86 @@
-[
-  {
-    "name": "HTML",
-    "icon": "html",
-    "mask": true
-  },
-  {
-    "name": "CSS",
-    "icon": "css",
-    "mask": true
-  },
-  {
-    "name": "JavaScript",
-    "icon": "js",
-    "mask": true
-  },
-  {
-    "name": "TypeScript",
-    "icon": "ts",
-    "mask": true
-  },
-  {
-    "name": "React",
-    "icon": "react"
-  },
-  {
-    "name": "Figma",
-    "icon": "figma"
-  },
-  {
-    "name": "Git",
-    "icon": "git"
-  },
-  {
-    "name": "Notion",
-    "icon": "notion",
-    "mask": true
-  },
-  {
-    "name": "Tailwind CSS",
-    "icon": "tailwind"
-  },
-  {
-    "name": "Next.js",
-    "icon": "nextjs",
-    "mask": true
-  },
-  {
-    "name": "Node.js",
-    "icon": "nodejs"
-  },
-  {
-    "name": "SQL Server",
-    "icon": "sqlserver"
-  },
-  {
-    "name": "Oracle Database",
-    "icon": "oracle"
-  },
-  {
-    "name": "MySQL",
-    "icon": "mysql"
-  },
-  {
-    "name": "MongoDB",
-    "icon": "mongodb"
-  },
-  {
-    "name": "Jest",
-    "icon": "jest",
-    "mask": true
-  },
-  {
-    "name": "Python",
-    "icon": "python"
-  },
-  {
-    "name": "Java",
-    "icon": "java"
-  },
-  {
-    "name": "Spring Framework",
-    "icon": "spring",
-    "mask": true
-  },
-  {
-    "name": "Angular",
-    "icon": "angular",
-    "mask": true
-  },
-  {
-    "name": "Firebase",
-    "icon": "firebase",
-    "mask": true
-  }
-]
+{
+  "language" : [
+      {
+        "name": "HTML",
+        "icon": "html"
+      },
+      {
+        "name": "Javascript",
+        "icon": "js"
+      },
+      {
+        "name": "Typescript",
+        "icon": "ts"
+      },
+      {
+        "name": "Python",
+        "icon": "python"
+      },
+      {
+        "name": "MongoDB",
+        "icon": "mongodb"
+      },
+      {
+        "name": "Oracle",
+        "icon": "oracle"
+      }
+  ],
+  "framework" : [
+      {
+        "name": "React js",
+        "icon": "reactjs"
+      },
+      {
+        "name": "Next js",
+        "icon": "nextjs"
+      },
+      {
+        "name": "Express js",
+        "icon": "express"
+      },
+      {
+        "name": "jQuery",
+        "icon": "jquery"
+      },
+      {
+        "name": "Node js",
+        "icon": "nodejs"
+      },
+      {
+        "name": "Firebase",
+        "icon": "firebase"
+      },
+      {
+        "name": "CSS",
+        "icon": "css"
+      },
+      {
+        "name": "Bootstrap",
+        "icon": "bootstrap"
+      },
+      {
+        "name": "Material UI",
+        "icon": "materialui"
+      },
+      {
+        "name": "Tailwnd CSS",
+        "icon": "tailwind"
+      },
+      {
+        "name": "SCSS",
+        "icon": "scss"
+      },
+      {
+        "name": "Styled-components",
+        "icon": "styledcomponents"
+      },
+      {
+        "name": "Framer motion",
+        "icon": "framermotion"
+      },
+      {
+        "name": "GIT",
+        "icon": "git"
+      }
+  ]
+}

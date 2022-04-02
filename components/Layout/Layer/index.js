@@ -1,9 +1,9 @@
 import Navigation from '../Navigation'
 import Options from '../Options'
 
-import { StyledLayer, SidebarBody, SidebarHead, SidebarFooter } from './layer.styled'
+import { StyledLayer, SidebarBody, SidebarHead } from './layer.styled'
 
-function Index({ navData, social }) {
+function Index(){
   return (
     <StyledLayer>
        <SidebarHead>
@@ -11,7 +11,7 @@ function Index({ navData, social }) {
        </SidebarHead>
 
        <SidebarBody>
-          <Navigation navData={navData} />
+          <Navigation />
        </SidebarBody>
     </StyledLayer>
   )

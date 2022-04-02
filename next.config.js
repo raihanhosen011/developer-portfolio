@@ -5,3 +5,7 @@ module.exports = {
     localeDetection: false
   }
 };
+
+
+      //  "partners" : "ক্রেতা",
+      //  "testmonials" : "রিভিউ",

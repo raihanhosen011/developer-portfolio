@@ -4,8 +4,6 @@
      "about" : "About",
      "skills" : "Skills",
      "projects" : "Projects",
-     "partners" : "Partners",
-     "testmonials" : "Testmonials",
      "contact" : "Contact"
   },
   "herodata" : {
@@ -15,5 +13,41 @@
     "subtitle" : "web-developer",
     "pera": "I'm a Tunisian based web designer & front‑end developer focused on crafting clean & user‑friendly experiences, I am passionate about building excellent software that improves the lives of those around me.",
     "button" : "more about me"   
+  },
+  "aboutdata" : {
+    "sectiontitle" : "About me",
+    "description" : "Developing software for the world of intent is something I'm passionate about and I'm dedicated to making the world of intent easy and affordable for everyone. Developing software for the world of intent is something I'm passionate about and I'm dedicated to making the world of intent easy and affordable for everyone." ,
+    "quote" : "I am a Web developer who cares about the code and the people.",
+    "personalinfo" : {
+        "tabtitle": "personal info",
+        "first name" : "raihan",
+        "last name" : "hosen",
+        "age" : "18 years",
+        "nationality" : "bangladeshi",
+        "freelance" : "available",
+        "address" : "chandpur",
+        "phone" : "+880 16091 97034",
+        "email" : "raihanhosen011@gmail.com",
+        "github" : "raihanhosen011",
+        "language" : "English, bangla"
+    },
+    "count" : [
+        {"num" : "1.9", "title" : "years of EXPERIENCE"},
+        {"num" : "77", "title" : "completed projects"},
+        {"num" : "10", "title" : "happy CUSTOMERS"},
+        {"num" : "2", "title" : "awards won"}
+    ]
+  },
+  "skills" : {
+    "sectiontitle" : "my skills"
+  },
+  "projects" : {
+      "sectiontitle" : "projects",
+      "description" : "My projects makes use of vast variety of latest technology tools. My best experience is to create Data Science projects and deploy them to web applications using cloud infrastructure."
+  },
+  "partners" : {
+      "sectiontitle" : "partners",
+      "title" : "We Work With the Best Partners",
+      "desc" : "While we are at the forefront of and specialize in design-build, we are very familiar with a number of delivery methods and are confident we can find the process that will best help you meet your goals."
   }
 }

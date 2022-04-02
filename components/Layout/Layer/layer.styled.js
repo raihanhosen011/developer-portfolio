@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const StyledLayer = styled.div`
   position: fixed;
   right: 0;
-  left: 0;
   bottom: 0;
   top: 0;
   display: flex;
@@ -11,6 +10,7 @@ export const StyledLayer = styled.div`
   justify-content: space-between;
   align-items: flex-end;
   padding: 10px 15px;
+  z-index: 10000;
 }
 `
 
@@ -21,7 +21,4 @@ export const SidebarHead = styled.div`
 `
 
 export const SidebarBody = styled.div` 
-`
-
-export const SidebarFooter = styled.div`
 `

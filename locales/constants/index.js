@@ -1,7 +1,8 @@
 import fullTools from "./fullTools.json";
-import mainTools from "./mainTools.json";
 import social from './social.json'
+import project from './projects.json'
+import partnerInfo from './partnerInfo.json'
 
-const constants = { fullTools, mainTools, social };
+const constants = { fullTools, social, project, partnerInfo };
 
 export default constants;

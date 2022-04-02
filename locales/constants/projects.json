@@ -1,0 +1,117 @@
+{
+   "featured" : [ 
+      {
+        "title" : "Full featured social media website : (devbook)",
+        "desc" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is",
+        "image" : "social-media-website",
+        "tools" : [
+           { "icon" : "nextjs", "name" : "Next js" },  
+           { "icon" : "redux", "name" : "Redux" },  
+           { "icon" : "css", "name" : "CSS" },  
+           { "icon" : "styledcomponents", "name" : "Styled Components" },  
+           { "icon" : "expressjs", "name" : "Express js" },  
+           { "icon" : "mongodb", "name" : "Mongo DB" },
+           { "icon" : "cloudinary", "name" : "Cloudinary" }
+        ],
+        "demo" : "https://devbook-frontend.vercel.app/",
+        "code" : "https://github.com/raihanhosen011/devbook-frontend/blob/main/allcodes.text"
+      }
+   ],
+   
+   "all" : [
+        {
+            "title" : "Amazon clone",
+            "image" : ["amazon/amazon-1"],
+            "tools" : [
+                { "icon" : "nextjs", "name" : "Next js" },  
+                { "icon" : "redux", "name" : "Redux" },  
+                { "icon" : "css", "name" : "CSS" },
+                { "icon" : "bootstrap", "name" : "Bootstrap" }
+            ],
+            "demo" : "https://amazon-nw.vercel.app/",
+            "code" : "https://github.com/raihanhosen011/amazon-nw"
+        },
+        {
+            "title" : "Airbnb clone",
+            "image" : ["airbnb/airbnb-1"],
+            "tools" : [
+                { "icon" : "reactjs", "name" : "React js" }, 
+                { "icon" : "materialui", "name" : "Material UI" }, 
+                { "icon" : "firebase", "name" : "Firebase" },
+                { "icon" : "redux", "name" : "Redux" },
+                { "icon" : "css", "name" : "CSS" }
+
+            ],
+            "demo" : "https://airbnb-clone-nw.netlify.app/",
+            "code" : "https://github.com/raihanhosen011/airbnb-clone"
+        },
+        {
+            "title" : "COVID 19 tracker",
+            "image" : ["covid/covid-19-1"],
+            "tools" : [
+                { "icon" : "reactjs", "name" : "React js" },  
+                { "icon" : "redux", "name" : "Redux" },  
+                { "icon" : "materialui", "name" : "Material UI" },  
+                { "icon" : "css", "name" : "CSS" }
+            ],
+            "demo" : "https://github.com/raihanhosen011",
+            "code" : "https://covid-19-tracker-clone-bfa81.web.app/"
+        },
+        {
+            "title" : "Trip guide",
+            "image" : ["tavel-gruide/tavel-guide-1"],
+            "tools" : [
+                { "icon" : "reactjs", "name" : "React js" }, 
+                { "icon" : "materialui", "name" : "Material UI" },
+                { "icon" : "css", "name" : "CSS" },
+                { "icon" : "google-map-logo", "name" : "Google Map" }
+            ],
+            "demo" : "https://tripguid.netlify.app/",
+            "code" : "https://github.com/raihanhosen011/trip-guid-reactjs"
+        },
+        {
+            "title" : "Realtime chat website",
+            "image" : ["chat/realtime-chat-1"],
+            "tools" : [
+                { "icon" : "reactjs", "name" : "React js" },
+                { "icon" : "tailwind", "name" : "Tailwind CSS" }
+            ],
+            "demo" : "https://chatbot-nw.netlify.app/",
+            "code" : "https://github.com/raihanhosen011/chatbot"
+        },
+        {
+            "title" : "Github clone",
+            "image" : ["github/github-1"],
+            "tools" : [
+                { "icon" : "reactjs", "name" : "React js" },  
+                { "icon" : "redux", "name" : "Redux" },  
+                { "icon" : "css", "name" : "CSS" },
+                { "icon" : "bootstrap", "name" : "Bootstrap" }
+            ],
+            "demo" : "https://github-clone-nw.vercel.app/",
+            "code" : "https://github.com/raihanhosen011/github-clone-nw"
+        },
+        {
+            "title" : "Landing page 1",
+            "image" : ["landing/landing-page-1-1"],
+            "tools" : [
+                { "icon" : "html", "name" : "HTML" }, 
+                { "icon" : "css", "name" : "CSS" },
+                { "icon" : "bootstrap", "name" : "Bootstrap" }
+            ],
+            "demo" : "https://raihanhosen011.github.io/landing-page-1/",
+            "code" : "https://github.com/raihanhosen011/landing-page-1"
+        },
+        {
+            "title" : "Landing page 2",
+            "image" : ["landing/landing-page-2-1"],
+            "tools" : [
+                { "icon" : "html", "name" : "HTML" }, 
+                { "icon" : "css", "name" : "CSS" },
+                { "icon" : "bootstrap", "name" : "Bootstrap" }
+            ],
+            "demo" : "https://raihanhosen011.github.io/landing-page-2/",
+            "code" : "https://github.com/raihanhosen011/landing-page-2"
+        }
+   ]
+}

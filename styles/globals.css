@@ -16,6 +16,7 @@
   --input-color: hsl(207, 0%, 87%);
   --body-color: hsl(207, 0%, 95%);
   --body-white: hsl(207, 60%, 100%);
+  --body-third: hsl(0deg 0% 94% / 77%);
 
   --scroll-bar-color: hsl(207, 12%, 90%);
   --scroll-thumb-color: hsl(207, 12%, 80%);
@@ -71,7 +72,8 @@ body.dark-theme {
   --text-color: hsl(207, 8%, 75%);
   --input-color: hsl(207, 17%, 19%);
   --body-color: hsl(208, 28%, 12%);
-  --body-white: hsl(210deg 8% 20%);
+  --body-white: hsl(0, 1%, 17%);
+  --body-third: hsl(0, 0%, 24%);
   --container-color: hsl(207, 29%, 16%);
 }
 
@@ -141,12 +143,55 @@ canvas{
 }
 canvas.c {
   display: block;
-  position: absolute;
+  position: fixed;
+  width: 100%;
+  height: 100%;
 }
 
 ::placeholder{
   color: rgb(122, 122, 122);
 }
+
+
+/* =========== LANGUAGE COLOR ============ */
+.reactjs{background-color : #194d339c;}
+.reactjs > span{color: #54d0df !important;}
+
+.nextjs{background-color : #0707079c;}
+.nextjs > span{color: #f5f5f5 !important;}
+
+.redux{background-color : #201532;}
+.redux > span{color: #764ABC !important;}
+
+.css{background-color : #275bea;}
+.css > span{color: #ffffff !important;}
+
+.styledcomponents{background-color : #645331;}
+.styledcomponents > span{color: #FBD559 !important;}
+
+.expressjs{background-color : #505050;}
+.expressjs > span{color: #ececec !important;}
+
+.mongodb{background-color : #264416;}
+.mongodb > span{color: #69B241 !important;}
+
+.cloudinary{background-color : #d4d4d4;}
+.cloudinary > span{color: #3A4CBD !important;}
+
+.bootstrap{background-color : #120626;}
+.bootstrap > span{color: #8812FC !important;}
+
+.materialui{background-color : #15252e;}
+.materialui > span{color: #00ACF8 !important;}
+
+.firebase{background-color : #876235;}
+.firebase > span{color: #FDCA40 !important;}
+  
+.html{background-color : #4a3b28;}
+.html > span{color: #DC4F15 !important;}
+  
+.google-map-logo{background-color : #60201d;}
+.google-map-logo > span{color: #dd4736 !important;}
 
 
 /* ========= HERO ======= */
@@ -156,6 +201,31 @@ canvas.c {
 .hero-name{
   background-image: url('../public/images/back.png');
 }
+
+
+/* page transition */
+.slide-in {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: var(--body-white);
+  transform-origin: top;
+  z-index: 100000;
+}
+
+.slide-out {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100000;
+  height: 100vh;
+  width: 100%;
+  background: var(--body-white);
+  transform-origin: bottom;
+}
+
 
 /*========== SCROLL BAR ==========*/
 ::-webkit-scrollbar {

@@ -13,8 +13,6 @@ import { useDispatch } from 'react-redux';
 
 import Hero from '@components/pages/Hero'
 import locales from '../locales';
-import useLocale from 'hooks/useLocale';
-
 export default function Index({ content }) {
   const dispatch = useDispatch()
 
@@ -30,7 +28,7 @@ export default function Index({ content }) {
 export const getStaticProps = ({ locale }) => {
   return {
     props: {
-      content: locales.en,
+      content: locales[locale],
     },
   };
 };

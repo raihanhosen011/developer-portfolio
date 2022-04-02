@@ -10,7 +10,7 @@
 
 import Partners from '@components/pages/Partners'
 
-export default function Index({ content }) {
+export default function Partners({ content }) {
   return (
     <Partners />
   )

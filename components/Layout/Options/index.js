@@ -22,11 +22,11 @@ function Index() {
 
   return (
     <>
-      {/* <Icon 
+      <Icon 
         src={`options/${locale === 'en' ? 'bn' : 'en'}.png`} 
         onClick={toggleLocale}
         alt={`Switch to ${swithLocale}`}
-      /> */}
+      />
 
       <Icon 
         icon={mood === 'light' ? icons.moon : icons.sun} 

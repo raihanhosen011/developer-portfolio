@@ -12,6 +12,8 @@ import Partners from '@components/pages/Partners'
 
 export default function Partner({ content }) {
   return (
-    <Partners />
+    <>
+      <Partners />    
+    </>
   )
 }

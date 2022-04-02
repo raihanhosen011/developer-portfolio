@@ -14,7 +14,7 @@ function FeaturedProjects({ title, desc, image, tools, demo, code }) {
                 <p> {desc} </p>  
 
                 <UsedLanguage> 
-                   {tools.map(({ name, icon }) =>  <Lang name={name} icon={icon} />)}
+                   {tools.map(({ name, icon }, index) =>  <Lang key={index} name={name} icon={icon} />)}
                 </UsedLanguage>
 
                 <FeaturedLeftBottom>
@@ -24,7 +24,7 @@ function FeaturedProjects({ title, desc, image, tools, demo, code }) {
             </FeaturedLeft>
 
             <FeaturedRight> 
-                <Image src={`/images/mockup/${image}.png`} width={1} height={0.7} layout='responsive' />
+                <Image src={`/images/mockup/${image}.png`} width={1} height={0.7} alt='Feture img' layout='responsive' />
             </FeaturedRight>
         </FeaturedProject>
   )

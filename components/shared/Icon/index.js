@@ -39,13 +39,13 @@ export const CaptionIconBtn = ({ icon, blank, src, alt, caption, to, ...props })
     return remidi  
   }else if(to){
     return (
-      <Link href={to} >
+      <Link href={to} rel="noreferrer"  >
          {remidi} 
       </Link>  
     )  
   }else if(blank){
     return (
-      <a href={to} target='_blank' >
+      <a href={to} target='_blank' rel="noreferrer" >
         {remidi} 
       </a>
     )
@@ -65,7 +65,7 @@ export const HoverIconBtn = ({ icon, src, alt, caption, to, ...props }) => {
     return remidi  
   }else{
     return (
-      <Link href={to} >
+      <Link href={to} rel="noreferrer" >
          {remidi} 
       </Link>  
     )  

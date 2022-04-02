@@ -32,7 +32,7 @@ function SignleProject({ title, image, tools, demo, code }) {
     <SingleProjectContainer>
        <SingleProjectHead>
           <Carousel responsive={responsive} autoPlay={false} >
-             {image.map((_) => <img src={`/images/mockup/${_}.png`} alt='img' />)}
+             {image.map((_, index) => <img key={index} src={`/images/mockup/${_}.png`} alt='img' />)}
           </Carousel>
        </SingleProjectHead>   
 
@@ -40,12 +40,12 @@ function SignleProject({ title, image, tools, demo, code }) {
           <h4> {title} </h4>
 
           <Tools>
-            {tools.map(({ name, icon }) =>  <Lang name={name} icon={icon} />)}
+            {tools.map(({ name, icon }, index) =>  <Lang key={index} name={name} icon={icon} />)}
           </Tools>  
 
           <ProjectButtons>
-             <a href={code} target='_blank' className='project-btn' > <span>code</span> <UilArrow /> </a>
-             <a href={demo} target='_blank' className='project-btn demo' > <span>demo</span> <UilDesktop /> </a>
+             <a href={code} target='_blank' rel="noreferrer" className='project-btn' > <span>code</span> <UilArrow /> </a>
+             <a href={demo} target='_blank' rel="noreferrer" className='project-btn demo' > <span>demo</span> <UilDesktop /> </a>
           </ProjectButtons>  
        </SingleProjectBody>
     </SingleProjectContainer>

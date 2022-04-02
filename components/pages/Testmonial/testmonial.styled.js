@@ -26,14 +26,6 @@ export const TestmonialContent = styled.div`
       border-radius: 9px;
       min-height: 80vh;
       border: 1px solid #3D4752;
-
-      .testmonial-object {
-        display: block;
-        position: absolute;
-        max-width: 130px;
-        top: -52px;
-        left: -30px;
-      }
     }
 `
 
@@ -106,6 +98,20 @@ export const StyledClientSlug = styled.div`
       -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
       filter: grayscale(100%);
       object-fit: contain;
+    }
+  }
+`
+
+export const SectionObject = styled.div`
+  @media (min-width: 900px){
+    top: -52px !important;
+    left: -30px !important;
+    position: absolute !important;
+
+    span {
+      display: block !important;
+      width: 130px !important;
+      height: 130px !important;
     }
   }
 `

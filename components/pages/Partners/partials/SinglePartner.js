@@ -4,7 +4,7 @@ import { SinglePartnerStyle } from '../partner.styled'
 function SinglePartner({ name, to }) {
   return (
     <SinglePartnerStyle target='_blank' href={to} >
-       <Image src={`/images/partner/${name}.png`} width={1} height={1} layout='responsive' className='partner-logo' />     
+       <Image src={`/images/partner/${name}.png`} width={1} height={1} layout='responsive' alt='Single partner img' className='partner-logo' />     
     </SinglePartnerStyle>
   )
 }

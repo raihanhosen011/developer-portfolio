@@ -26,7 +26,7 @@ function Index() {
                     <h2> Language and Database </h2>
 
                     <SkillItemWrapper>
-                       {fullTools.language.map(({ name, icon }) => <SkillItem name={name} icon={icon} />)} 
+                       {fullTools.language.map(({ name, icon }, index) => <SkillItem key={index} name={name} icon={icon} />)} 
                     </SkillItemWrapper>
                 </SkillSection>
 
@@ -34,7 +34,7 @@ function Index() {
                     <h2> Language, Framework &amp; other </h2>
 
                     <SkillItemWrapper>
-                        {fullTools.framework.map(({ name, icon }) => <SkillItem name={name} icon={icon} />)} 
+                        {fullTools.framework.map(({ name, icon }, index) => <SkillItem key={index} name={name} icon={icon} />)} 
                     </SkillItemWrapper>
                 </SkillSection>
         </SkillWrapper>         

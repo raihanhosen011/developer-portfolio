@@ -27,10 +27,10 @@ function Index() {
 
               <h3 className='project-text' >{projects.description}</h3>
 
-              {project.featured.map((_) => <Featured {..._} />)}
+              {project.featured.map((_, index) => <Featured key={index} {..._} />)}
            
               <NormalProjects>
-                {project.all.map((_) => <SignleProject {..._} />)}           
+                {project.all.map((_, index) => <SignleProject key={index} {..._} />)}           
               </NormalProjects>
 
         </ProjectWrapper>      

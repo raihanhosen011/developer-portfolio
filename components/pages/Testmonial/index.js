@@ -1,9 +1,10 @@
 import React,{useEffect, useState} from 'react'
+import Image from 'next/image'
 
 import { fadeInUp } from '@components/animations'
 import { motion } from 'framer-motion'
 
-import { ClientDetails, TestmonialClients, TestmonialContainer, TestmonialContent, TestmonialTexts, TestmonialWrapper, TextsBody, TextsHead } from './testmonial.styled'
+import { ClientDetails, SectionObject, TestmonialClients, TestmonialContainer, TestmonialContent, TestmonialTexts, TestmonialWrapper, TextsBody, TextsHead } from './testmonial.styled'
 import Avatar from './partials/Avatar'
 import ClientSlug from './partials/ClientSlug'
 
@@ -70,7 +71,9 @@ function Index() {
                   )}
                </TestmonialClients>
 
-               <img src='/images/quote.png' alt='quote image' className='testmonial-object' />
+               <SectionObject>
+                  <Image src='/images/quote.png' width={1} height={1} layout='responsive' alt='quote image' className='testmonial-object' />                  
+               </SectionObject>
             </TestmonialContent>
 
         </TestmonialWrapper>       

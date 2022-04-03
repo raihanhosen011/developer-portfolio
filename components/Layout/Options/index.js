@@ -5,9 +5,9 @@ import { Icon } from '@components/shared/Icon'
 import useLocale from 'hooks/useLocale'
 
 function Index() {
-  const [locale, toggleLocale] = useLocale()
+  // const [locale, toggleLocale] = useLocale()
 
-  const swithLocale = locale === 'en' ? "English" : "Bangla"
+  // const swithLocale = locale === 'en' ? "English" : "Bangla"
   const [mood, setMood] = useState('dark')
 
   useEffect(() => {
@@ -22,11 +22,11 @@ function Index() {
 
   return (
     <>
-      <Icon 
+      {/* <Icon 
         src={`options/${locale === 'en' ? 'bn' : 'en'}.png`} 
         onClick={toggleLocale}
         alt={`Switch to ${swithLocale}`}
-      />
+      /> */}
 
       <Icon 
         icon={mood === 'light' ? icons.moon : icons.sun} 

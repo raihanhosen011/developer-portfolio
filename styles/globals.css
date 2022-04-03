@@ -76,6 +76,10 @@ body.dark-theme {
   --body-third: hsl(0, 0%, 24%);
   --container-color: hsl(207, 29%, 16%);
 }
+body.dark-theme .social-img{
+  -webkit-filter: grayscale(1) invert(1);
+  filter: grayscale(1) invert(1);
+}
 
 
 /*==================== BASE ====================*/

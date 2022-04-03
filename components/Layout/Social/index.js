@@ -7,7 +7,7 @@ function Index({ social }) {
       <Socials>
           {social.map(({ icon, href }) => 
             <SocialWrapper key={icon} href={href} target='_blank' >
-              <Image src={`/icons/social/${icon}.png`} width={1} height={1} layout='responsive' alt={icon} />
+              <Image src={`/icons/social/${icon}.png`} width={1} height={1} layout='responsive' alt={icon} className='social-img' />
             </SocialWrapper>           
           )}
       </Socials>

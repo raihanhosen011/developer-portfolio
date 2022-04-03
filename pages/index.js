@@ -15,22 +15,22 @@ import Hero from '@components/pages/Hero'
 import locales from '../locales';
 
 
-export default function Index({ content }) {
+export default function Index({ }) {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    dispatch({ type : "GET_DATA", payload : content })
-  }, [content, dispatch])
+    dispatch({ type : "GET_DATA", payload : locales.en })
+  }, [locales])
 
   return (
     <Hero />
   )
 }
 
-export const getStaticProps = ({ locale }) => {
-  return {
-    props: {
-      content: locales[locale],
-    },
-  };
-};
+// export const getStaticProps = ({ locale }) => {
+//   return {
+//     props: {
+//       content: locales[locale],
+//     },
+//   };
+// };

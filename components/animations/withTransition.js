@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-function WithTransition(OriginalComponent){
+function withTransition(OriginalComponent){
   return () => (
     <>
       <OriginalComponent />
@@ -22,4 +22,4 @@ function WithTransition(OriginalComponent){
   );
 };
 
-export default WithTransition;
+export default withTransition;

@@ -13,6 +13,8 @@ import { useDispatch } from 'react-redux';
 
 import Hero from '@components/pages/Hero'
 import locales from '../locales';
+
+
 export default function Index({ content }) {
   const dispatch = useDispatch()
 

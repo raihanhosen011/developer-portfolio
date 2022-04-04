@@ -27,8 +27,8 @@ export const HeroRight = styled.div`
 
 
 export const HeroImage = styled.div`
-  height : calc(100vh - 100px);
-  width: 100%;
+  height: 625px;
+  width: 415px;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 13px;

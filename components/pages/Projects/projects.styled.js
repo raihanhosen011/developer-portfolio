@@ -104,7 +104,6 @@ export const SingleProjectHead = styled.div`
 
   ul{
     li{
-      height: 230px;
       background: white;
 
       img {

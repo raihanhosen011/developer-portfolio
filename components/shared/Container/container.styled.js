@@ -3,7 +3,7 @@ import styled from "styled-components";
 const StyledContainer = styled.section.attrs(() => ({
    className : "section"
 }))`
-   max-width : 90%;
+   max-width : 1240px;
    margin : auto;
    padding-left: var(--mb-0-5);
    padding-right: var(--mb-0-5);

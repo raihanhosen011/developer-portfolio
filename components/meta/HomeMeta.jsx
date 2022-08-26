@@ -3,6 +3,7 @@ import Head from "next/head";
 const HomeMeta = () => {
   return (
     <Head>
+      <link rel="icon" type="image/x-icon" href="/icons/favicon.ico"></link>
       <title>Raihan Hosen : Portfolio</title>
       <meta name="description" content='Hi, my name is Raihan Hosen and I am a full-stack web developer with 2+ years of experience with modern technologies like React, Next js, Tailwind CSS, Node j, Node js, Mongo DB, Express JS etc..' />
       <meta

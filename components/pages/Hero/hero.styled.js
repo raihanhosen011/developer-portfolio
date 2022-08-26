@@ -62,6 +62,7 @@ export const HeroContent = styled.div`
   p{
     margin: 22px 0;
     margin-right: 25px;
+    line-height: 28px;
   }
   h1{
     margin-bottom: -9px;

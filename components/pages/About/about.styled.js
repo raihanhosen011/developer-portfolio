@@ -15,8 +15,9 @@ export const AboutDescription = styled.div`
    }
    h2{
       padding-left: 10px;
-      border-left: 1px solid var(--first-color);
-      color: var(--first-color);
+      border-left: 1px solid var(--first-color-alt);
+      color: var(--first-color-alt);
+      font-weight: 400;
       height: fit-content;
    }
 
@@ -34,7 +35,21 @@ export const PersonalInfo = styled.div`
     margin-bottom: 8px;
     text-transform: uppercase;
     font-size: var(--h2-font-size);   
-    color: var(--first-color); 
+    color: var(--first-color-alt); 
+    position: relative;  
+          
+      @media (min-width: 1000px){
+         &:after{
+            content: "";
+            margin-left: 12px;
+            position: absolute;
+            z-index: 100;
+            background: var(--first-color);
+            width: 225px;
+            height: 1px;
+            top: 18px;
+         }
+      }
   } 
 
   .title{
@@ -75,7 +90,7 @@ export const CountColumn = styled.div`
    border-radius: 7px;
 
    h1{
-      color: var(--first-color);   
+      color: var(--first-color-alt);   
       position: relative;
       display: inline-block;
       margin: 0;

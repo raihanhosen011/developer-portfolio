@@ -14,7 +14,7 @@ export const SectionTitle = styled.div`
         font-size: 3.9rem;
         text-transform: uppercase;
         font-weight: 700;
-        opacity: .2;
+        opacity: .08;
         position: absolute;
         transform: translateX(-50%);
         letter-spacing: 10px;

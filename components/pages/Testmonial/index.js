@@ -1,5 +1,6 @@
 import React,{useEffect, useState} from 'react'
 import Image from 'next/image'
+import { useSelector } from 'react-redux'
 
 import { fadeInUp } from '@components/animations'
 import { motion } from 'framer-motion'
@@ -10,7 +11,7 @@ import ClientSlug from './partials/ClientSlug'
 
 import { SectionTitle } from '@components/shared/Global/global.style'
 import withTransition from '@components/animations/withTransition'
-import { useSelector } from 'react-redux'
+import Glassmorphism from '@components/shared/Glassmorphisom'
 
 let initial = {
    slug : 0,  
@@ -36,6 +37,8 @@ function Index() {
 
   return (
     <TestmonialContainer>
+       <Glassmorphism />  
+
        {testmonails &&
         <TestmonialWrapper as={motion.div} {...fadeInUp} >
             

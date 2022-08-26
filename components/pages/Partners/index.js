@@ -8,6 +8,7 @@ import { SectionTitle } from '@components/shared/Global/global.style'
 import { PartnerConent, PartnerContainer, PartnerLogos, PartnerTexts, PartnerWrapper } from './partner.styled'
 import SinglePartner from './partials/SinglePartner'
 import withTransition from '@components/animations/withTransition'
+import Glassmorphism from '@components/shared/Glassmorphisom'
 
 function Index() {
   const { data } = useSelector(state => state) 
@@ -16,6 +17,8 @@ function Index() {
 
   return (
     <PartnerContainer>
+       <Glassmorphism />
+
        {partners && 
          <PartnerWrapper as={motion.div} {...fadeInUp} >
             

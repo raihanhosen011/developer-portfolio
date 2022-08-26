@@ -9,6 +9,7 @@ import { ProjectContainer, ProjectWrapper, NormalProjects } from './projects.sty
 import Featured from './partials/Featured'
 import SignleProject from './partials/SingleProject'
 import withTransition from '@components/animations/withTransition'
+import Glassmorphism from '@components/shared/Glassmorphisom'
 
 function Index() {
   const { data } = useSelector(state => state)
@@ -17,6 +18,8 @@ function Index() {
 
   return (
     <ProjectContainer>
+      <Glassmorphism />
+
       {projects &&
         <ProjectWrapper  as={motion.div} {...fadeInUp}  >
 

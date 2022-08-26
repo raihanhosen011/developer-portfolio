@@ -7,6 +7,7 @@ import { motion } from 'framer-motion'
 
 import withTransition from '@components/animations/withTransition'
 import { CaptionIconBtn } from '@components/shared/Icon'
+import Glassmorphism from '@components/shared/Glassmorphisom'
 import { SectionTitle } from '../../shared/Global/global.style'
 import { AboutContainer, AboutDescription, AboutRow, AboutWrapper, CountColumn, ExperienceCount, PersonalInfo } from './about.styled'
 
@@ -17,6 +18,8 @@ function Index() {
 
   return (
     <AboutContainer >
+        <Glassmorphism /> 
+
        {aboutdata &&
        <AboutWrapper as={motion.div} {...fadeInUp} >
           

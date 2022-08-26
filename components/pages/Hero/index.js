@@ -7,6 +7,7 @@ import withTransition from '@components/animations/withTransition'
 import { fadeInUp } from '@components/animations'
 
 import { CaptionIconBtn } from '@components/shared/Icon'
+import Glassmorphism from '@components/shared/Glassmorphisom'
 import Social from '../../Layout/Social'
 import { HeroContainer, HeroWrapper, HeroLeft, HeroRight, HeroImage, HeroContent, HeroShape } from './hero.styled'
 
@@ -17,6 +18,8 @@ function Index(){
 
   return (
     <HeroContainer >
+       <Glassmorphism />
+
        <HeroWrapper as={motion.div} {...fadeInUp} >
             <HeroLeft > 
                <HeroImage className='hero-model' />
@@ -29,7 +32,7 @@ function Index(){
                         <h2>{herodata.intro}</h2> 
                         <h1> 
                           <span> {herodata.wither} </span> 
-                          <span className='hero-name' >{ herodata.name }</span> 
+                          <span className='gradiant-hero-name' >{ herodata.name }</span> 
                         </h1>
                         
                         <h2>{ herodata.subtitle }</h2>
@@ -41,9 +44,7 @@ function Index(){
                     <Social social={social} />
                 </HeroContent>              
               }
-           </HeroRight> 
-            
-           <HeroShape />          
+           </HeroRight>       
        </HeroWrapper>
     </HeroContainer>
   )

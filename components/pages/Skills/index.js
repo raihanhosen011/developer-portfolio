@@ -6,6 +6,7 @@ import { SectionTitle } from '@components/shared/Global/global.style'
 import { SkillContainer, SkillSection, SkillWrapper, SkillItemWrapper } from './skill.styled'
 import SkillItem from './partials/SkillItem'
 import withTransition from '@components/animations/withTransition'
+import Glassmorphism from '@components/shared/Glassmorphisom'
 
 function Index() {
   const { data } = useSelector(state => state)  
@@ -14,6 +15,8 @@ function Index() {
 
   return (
     <SkillContainer>
+       <Glassmorphism /> 
+
        {skills && 
         <SkillWrapper as={motion.div} {...fadeInUp} >
         

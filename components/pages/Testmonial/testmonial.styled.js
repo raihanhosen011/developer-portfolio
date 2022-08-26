@@ -25,7 +25,6 @@ export const TestmonialContent = styled.div`
       background: var(--body-white);
       border-radius: 9px;
       min-height: 80vh;
-      border: 1px solid #3D4752;
     }
 `
 

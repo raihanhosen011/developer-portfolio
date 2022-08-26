@@ -1,11 +1,17 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /*==================== GOOGLE FONTS ====================*/
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,400;1,600;1,700&display=swap');
+
 
 /*==================== VARIABLES CSS ====================*/
 :root {
   /*========== Colors ==========*/
-  --first-color: hsl(207, 73%, 61%);
-  --first-color-alt: hsl(207, 57%, 53%);
+  --first-color: #22577E;
+  --first-color-alt: #5ca1dd;
   --first-color-lighter: hsl(207, 92%, 85%);
   
   --title-color: hsl(207, 8%, 15%);
@@ -16,6 +22,7 @@
   --input-color: hsl(207, 0%, 87%);
   --body-color: hsl(207, 0%, 95%);
   --body-white: hsl(207, 60%, 100%);
+  --body-white-nt: hsl(207, 60%, 100%);
   --body-third: hsl(0deg 0% 94% / 77%);
 
   --scroll-bar-color: hsl(207, 12%, 90%);
@@ -70,11 +77,12 @@ body.dark-theme {
   --first-color-second: hsl(207, 30%, 8%);
   --title-color: hsl(207, 8%, 95%);
   --text-color: hsl(207, 8%, 75%);
-  --input-color: hsl(207, 17%, 19%);
-  --body-color: hsl(208, 28%, 12%);
-  --body-white: hsl(0, 1%, 17%);
-  --body-third: hsl(0, 0%, 24%);
-  --container-color: hsl(207, 29%, 16%);
+  --input-color: hsl(204, 7%, 14%);
+  --body-color: hsl(200, 13%, 9%);
+  --body-white: hsl(202deg 5% 13% / 50%);
+  --body-white-nt: hsl(202deg 5% 13%);
+  --body-third: hsl(0deg 0% 16% / 69%);
+  --container-color: hsl(210, 19%, 14%);
 }
 body.dark-theme .social-img{
   -webkit-filter: grayscale(1) invert(1);
@@ -202,10 +210,12 @@ canvas.c {
 .hero-model{
   background-image: url('../public/images/model/raihan-hosen.png');
 }
-.hero-name{
-  background-image: url('../public/images/back.png');
+.gradiant-hero-name{
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(to right,#9acdf7, #0e71c2);
 }
-
 
 /* page transition */
 .slide-in {

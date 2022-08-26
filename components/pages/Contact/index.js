@@ -9,6 +9,7 @@ import { SectionTitle } from '@components/shared/Global/global.style'
 import { ContactContainer, ContactContent, ContactForm, ContactInformation, ContactWrapper } from './contact.styled'
 import { CaptionIconBtn } from '@components/shared/Icon'
 import withTransition from '@components/animations/withTransition'
+import Glassmorphism from '@components/shared/Glassmorphisom'
 
 function Index() {
 
@@ -25,6 +26,8 @@ function Index() {
 
   return (
     <ContactContainer>
+       <Glassmorphism /> 
+
        <ContactWrapper as={motion.div} {...fadeInUp} >
 
             <SectionTitle>
@@ -40,7 +43,7 @@ function Index() {
                    <p className='icon-text' >
                      <UilMap />
                      <span>ADDRESS POINT</span>  
-                     123 Stree New York City , United States Of America 750065.          
+                     Chandpur, chittogong, Bangladesh           
                    </p> 
 
                    <p className='icon-text' >

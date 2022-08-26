@@ -7,6 +7,11 @@ export const HeroWrapper = styled.div`
   min-height: 100vh;
   display : grid;
   grid-template-columns: 1fr 2fr;
+  
+  @media (min-width: 1000px){
+    overflow: hidden;
+    height: 100vh;
+  }
 `
 
 export const HeroLeft = styled.div`
@@ -27,11 +32,12 @@ export const HeroRight = styled.div`
 
 
 export const HeroImage = styled.div`
-  height: 625px;
-  width: 415px;
+  width: 380px;
+  height: 380px;
+  border: 5px solid #424242;
+  border-radius: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 13px;
   background-position: center;
   
   span{
@@ -45,15 +51,17 @@ export const HeroImage = styled.div`
     margin: auto;
     border-radius: 50%;
     margin-bottom: 11px;
+    border: 5px solid #424242;
   }
 `
 
 export const HeroContent = styled.div`
-  width: 75%;
-  margin: auto;
+  width: 600px;
+  margin-left: 30px;
 
   p{
-    margin: 17px 0;
+    margin: 22px 0;
+    margin-right: 25px;
   }
   h1{
     margin-bottom: -9px;
@@ -108,7 +116,7 @@ export const HeroShape = styled.div`
   transform: rotate(-22deg);
   left: -80%;
   top: -50%;
-  background: var(--first-color);
+  background: linear-gradient(128deg,var(--first-color), transparent);
   z-index: -1;
 
   @media (max-width: 768px){

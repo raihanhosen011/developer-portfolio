@@ -11,7 +11,7 @@ export const StyledIcon = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--body-white);
+    background: var(--body-white-nt);
     border-radius: 50%;
     cursor: pointer;
     overflow: hidden;

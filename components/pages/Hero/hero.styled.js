@@ -12,6 +12,10 @@ export const HeroWrapper = styled.div`
     overflow: hidden;
     height: 100vh;
   }
+
+  @media (max-width: 768px){
+    padding: 20px;
+  }
 `
 
 export const HeroLeft = styled.div`
@@ -59,6 +63,14 @@ export const HeroContent = styled.div`
   width: 600px;
   margin-left: 30px;
 
+  @media (max-width: 768px){
+    margin-left: 8px;
+
+    p{
+      font-size: 14px;
+    }
+  }
+
   p{
     margin: 22px 0;
     margin-right: 25px;
@@ -89,9 +101,13 @@ export const HeroContent = styled.div`
     text-transform: uppercase;
     font-size: var(--mb-2);
     margin-bottom: -9px;
+
+    @media (max-width: 768px){
+      font-size: 28px;
+      margin-bottom: -5px;
+    }
   }
 
-  @media (max-width: 1000px) {width: 88%;}
   @media (max-width: 800px) {
     width: 92%;
     

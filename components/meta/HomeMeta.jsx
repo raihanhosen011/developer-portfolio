@@ -10,6 +10,7 @@ const HomeMeta = () => {
         name="keywords"
         content="portfolio, personal website, web developer, fullstack developer"
       />
+      <meta name="google-site-verification" content="tau4i6_zZZL1IYlUDNXvpCjoXrv2Xjdzi9fRzUg-u6s" />
       <meta property="og:site_name" content="Raihan Hosen" />
       <meta property="og:title" content='Raihan Hosen : Portfolio' />
       <meta property="og:description" content='Raihan Hosen is a Full Stack Developer, pasionate about implementing incredible solutions and designs using React, Next.js, Node.js and MongoDB. ' />

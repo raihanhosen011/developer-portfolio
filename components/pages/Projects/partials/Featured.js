@@ -18,8 +18,8 @@ function FeaturedProjects({ title, desc, image, tools, demo, code }) {
                 </UsedLanguage>
 
                 <FeaturedLeftBottom>
-                   <a href={code} target='_blank' ><CaptionIconBtn icon={<UilArrow />} caption='Code' /></a>
-                   <a href={demo} target='_blank' ><CaptionIconBtn icon={<UilDesktop />} caption='Live demo' /></a>
+                   <a href={code} target='_blank' rel="noreferrer" ><CaptionIconBtn icon={<UilArrow />} caption='Code' /></a>
+                   <a href={demo} target='_blank' rel="noreferrer" ><CaptionIconBtn icon={<UilDesktop />} caption='Live demo' /></a>
                 </FeaturedLeftBottom>
             </FeaturedLeft>
 

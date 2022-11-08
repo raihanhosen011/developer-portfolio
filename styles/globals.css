@@ -84,4 +84,173 @@ body.dark-theme {
   --container-color: hsl(210, 19%, 14%);
 }
 
-body.dark-theme .social-im
+body.dark-theme .social-img{
+  -webkit-filter: grayscale(1) invert(1);
+  filter: grayscale(1) invert(1);
+}
+
+
+/*==================== BASE ====================*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: rgb(6, 115, 240);
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input, textarea{
+  border: none;
+  outline: none;
+  font-family: var(--body-font);
+}
+
+body.dark-theme .logo{
+  -webkit-filter: grayscale(1) invert(1);
+  filter: grayscale(1) invert(1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 550;
+  color: var(--title-color);
+}
+strong{
+  font-weight: 600;
+}
+button, input, textarea{
+  font-family: var(--body-font);
+}
+body.bn{
+  font-family: 'Hind Siliguri', sans-serif !important;
+}
+
+canvas{
+  display: none;
+}
+canvas.c {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+::placeholder{
+  color: rgb(122, 122, 122);
+}
+
+
+/* =========== LANGUAGE COLOR ============ */
+.reactjs{background-color : #194d339c;}
+.reactjs > span{color: #54d0df !important;}
+
+.nextjs{background-color : #0707079c;}
+.nextjs > span{color: #f5f5f5 !important;}
+
+.redux{background-color : #201532;}
+.redux > span{color: #764ABC !important;}
+
+.css{background-color : #275bea;}
+.css > span{color: #ffffff !important;}
+
+.styledcomponents{background-color : #645331;}
+.styledcomponents > span{color: #FBD559 !important;}
+
+.expressjs{background-color : #505050;}
+.expressjs > span{color: #ececec !important;}
+
+.mongodb{background-color : #264416;}
+.mongodb > span{color: #69B241 !important;}
+
+.cloudinary{background-color : #d4d4d4;}
+.cloudinary > span{color: #3A4CBD !important;}
+
+.bootstrap{background-color : #120626;}
+.bootstrap > span{color: #8812FC !important;}
+
+.materialui{background-color : #15252e;}
+.materialui > span{color: #00ACF8 !important;}
+
+.firebase{background-color : #876235;}
+.firebase > span{color: #FDCA40 !important;}
+
+.html{background-color : #4a3b28;}
+.html > span{color: #DC4F15 !important;}
+
+.google-map-logo{background-color : #60201d;}
+.google-map-logo > span{color: #dd4736 !important;}
+
+
+/* ========= HERO ======= */
+.hero-model{
+  background-image: url('../public/images/model/raihan-hosen.png');
+}
+.gradiant-hero-name{
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(to right,#9acdf7, #0e71c2);
+}
+
+/* page transition */
+.slide-in {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: var(--body-white);
+  transform-origin: top;
+  z-index: 100000;
+}
+
+.slide-out {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100000;
+  height: 100vh;
+  width: 100%;
+  background: var(--body-white);
+  transform-origin: bottom;
+}
+
+
+/*========== SCROLL BAR ==========*/
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: var(--scroll-bar-color);
+  border-radius: 0.5rem;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-thumb-color);
+  border-radius: 0.5rem;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--text-color-light);
+}

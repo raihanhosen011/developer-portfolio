@@ -1,6 +1,10 @@
 // imports
 import { Urbanist } from '@next/font/google';
 //
+import Mail from '@widgets/Mail';
+import Glassify from '@components/Glassify';
+import Socials from '@widgets/Socials';
+//
 import '../shared/styles/globals.css'
 
 // font
@@ -14,12 +18,14 @@ export default function RootLayout({
 }) {
   return (
     <html className={urbanist.className} >
-      <head>
-        <title> Home : Next 13 blog </title>
-      </head>
+      <body className='text-base bg-white dark:bg-slate-900 dark:text-slate-200' >
+        
+        <Socials />
+        <Mail />
+        <Glassify />
 
-      <body className='text-base text-white bg-slate-900' >
         {children}
+      
       </body>
     </html>
   )

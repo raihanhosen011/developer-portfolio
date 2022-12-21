@@ -2,6 +2,7 @@ import React from 'react'
 //
 import About from './sections/About'
 import Hero from './sections/Hero'
+import Worked from './sections/Worked'
 
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
 
       <Hero />
       <About />
+      <Worked />
 
     </>
   )

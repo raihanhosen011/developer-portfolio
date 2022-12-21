@@ -18,6 +18,36 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "baseUrl": "./",
+    "paths": {
+      "@public/*": [
+        "public/*"
+      ],
+      "@components/*": [
+        "src/common/components/*"
+      ],
+      "@widgets/*": [
+        "src/common/widgets/*"
+      ],
+      "@modules/*": [
+        "src/modules/*"
+      ],
+      "@types/*": [
+        "src/shared/@types/*"
+      ],
+      "@utils/*": [
+        "src/shared/utils/*"
+      ],
+      "@redux/*": [
+        "src/shared/redux/*"
+      ],
+      "@hooks/*": [
+        "src/shared/hooks/*"
+      ],
+      "@config/*": [
+        "src/shared/config/*"
+      ]
+    },  
     "plugins": [
       {
         "name": "next"

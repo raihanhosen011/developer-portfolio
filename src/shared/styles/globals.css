@@ -15,6 +15,9 @@
    section{
       @apply py-[50px] md:py-[80px] max-w-[1145px] px-8 lg:px-0 mx-auto
    }
+   .tab__item{
+      @apply relative transition-all duration-300 hover:bg-sky-600/10 flex items-center w-full text-left text-slate-400 cursor-pointer h-[42px] p-[0px_25px_2px] border-l-[2px] border-l-[#233554]
+   }
 }
 
 

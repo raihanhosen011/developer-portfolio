@@ -1,12 +1,14 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 import { IoMdArrowDropright } from 'react-icons/io'
 //
 import { skills } from '@modules/Home/config/constanst'
+import { fadeLeft, motionStep } from '@config/motion'
 
 
 const Left = () => {
   return (
-    <div className='col-span-3' >
+    <motion.div variants={fadeLeft} {...motionStep} className='col-span-3' >
 
       <div className='space-y-4 mt-7 text-slate-400' >
 
@@ -25,7 +27,7 @@ const Left = () => {
 
       </div>
 
-    </div>
+    </motion.div>
   )
 }
 

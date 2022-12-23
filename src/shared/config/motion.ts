@@ -1,53 +1,129 @@
 import { Variants } from 'framer-motion';
 
-
-// global
-export let easeing = [0.6,-0.05,0.01,0.99];
-export const transition = { duration:1.4, ease:[0.6,0.01,-0.05,0.9] };
-
-
-// hero 
-export const firstTitle = {
-    initial:{
-      y:-20,
+// fade up spring
+export const fadeUpSpring = {
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "spring",
+      damping: 5,
+      stiffness: 150,
     },
-    animate:{
-      y:0,
-      transition:{
-        delayChildren:0.4,
-        staggerChildren:0.04,
-        staggerDirection:-1
-      }
-    }
-}
+  },
 
-export const letter = {
-    initial:{
-      y:400,
+  hidden: {
+    opacity: 0,
+    y: 60,
+    transition: {
+      type: "spring",
+      damping: 5,
+      stiffness: 150,
     },
-    animate:{
-      y:0,
-      transition:{ ...transition }
-    }
+  },
 };
-  
 
-export const heroContainer = {
-    hidden: { opacity: 1, scale: 0 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: {
-        delayChildren: 0.3,
-        staggerChildren: 0.2
-      }
-    }
-}
-    
-export const heroItem = {
-    hidden: { y: 20, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1
-    }
+// fade left
+export const fadeLeft = {
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      type: "spring",
+      damping: 15,
+      stiffness: 80,
+    },
+  },
+
+  hidden: {
+    opacity: 0,
+    x: -100,
+    transition: {
+      type: "spring",
+      damping: 15,
+      stiffness: 80,
+    },
+  },
+};
+
+
+// fade left
+export const fadeBottom = {
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "spring",
+      damping: 15,
+      stiffness: 80,
+    },
+  },
+
+  hidden: {
+    opacity: 0,
+    y: -100,
+    transition: {
+      type: "spring",
+      damping: 15,
+      stiffness: 80,
+    },
+  },
+};
+
+
+// fade left
+export const fadeRight = {
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      type: "spring",
+      damping: 15,
+      stiffness: 80,
+    },
+  },
+
+  hidden: {
+    opacity: 0,
+    x: 100,
+    transition: {
+      type: "spring",
+      damping: 15,
+      stiffness: 80,
+    },
+  },
+};
+
+
+// fade top
+export const fadeTop = {
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "spring",
+      damping: 15,
+      stiffness: 80,
+    },
+  },
+
+  hidden: {
+    opacity: 0,
+    y: 100,
+    transition: {
+      type: "spring",
+      damping: 15,
+      stiffness: 80,
+    },
+  },
+};
+
+
+
+
+// inital step
+export const motionStep = {
+  initial : "hidden",
+  whileInView : "visible",
+  viewport : { once: true }
 }

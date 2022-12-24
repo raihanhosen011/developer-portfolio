@@ -8,9 +8,10 @@ import { HiOutlineExternalLink } from 'react-icons/hi'
 import { FiGithub } from 'react-icons/fi'
 //
 import { motionStep } from '@config/motion'
+import { ProjectTypes } from '@config/types'
 
 
-const ProjectCard = ({ id } : { id: number }) => {
+const ProjectCard = ({ secondary, live, thumnail, code, title, description, tech } : ProjectTypes) => {
   return (
         <motion.div 
             variants={{  
@@ -30,7 +31,7 @@ const ProjectCard = ({ id } : { id: number }) => {
                 transition: {
                   type: "spring",
                   damping: 15,
-                  stiffness: id * 20 + 50,
+                  stiffness: 1 * 20 + 50,
                 },
               },
             }}
@@ -38,11 +39,11 @@ const ProjectCard = ({ id } : { id: number }) => {
             className='col-span-4 bg-slate-800 rounded-xl p-4 group' 
         >
             <div>
-                    <Link href='/' >
+                    <Link href={`${live}`} >
                         <div className='h-[200px] w-full relative rounded-xl overflow-hidden'>
                             <Image
-                                src="/images/projects/project-1.jpg" 
-                                blurDataURL="/images/projects/project-1.jpg"
+                                src={`/images/projects/${thumnail}`} 
+                                blurDataURL={`/images/projects/${thumnail}`}
                                 className='transition-all duration-300 group-hover:scale-110 group-hover:rotate-3'
                                 layout='fill'
                                 objectFit='cover'
@@ -61,25 +62,23 @@ const ProjectCard = ({ id } : { id: number }) => {
 
                     <div className={'flex justify-end items-center gap-3 text-slate-300'} >
 
-                        <Link href='/' target='_blank' className='hover:text-sky-400 transition-all duration-300 hover:scale-110 text-2xl' >
+                        {live && <Link href={`${live}`} target='_blank' className='hover:text-sky-400 transition-all duration-300 hover:scale-110 text-2xl' >
                             <HiOutlineExternalLink />     
-                        </Link>
+                        </Link>}
 
-                        <Link href='/' target='_blank' className='hover:text-sky-400 transition-all duration-300 hover:scale-110 text-[1.2rem]' > 
+                        {code && <Link href={`${code}`} target='_blank' className='hover:text-sky-400 transition-all duration-300 hover:scale-90 text-[1.2rem]' > 
                             <FiGithub />     
-                        </Link>
+                        </Link>}
 
                     </div>
                 </div>
 
 
-                <h1 className='text-xl font-medium mb-1 text-slate-200' > Hello world BD </h1>
-                <p className='text-slate-400' > asdf asfffff asf asdf asdfdsa asfd asdf asdf asfffff asf asdf asdfdsa asfd asdf  </p>  
+                <h1 className='text-xl font-medium mb-1 text-slate-200' > {title} </h1>
+                <p className='text-slate-400' > {description}  </p>  
 
                 <div className='flex text-slate-300 mt-7 gap-x-4 flex-wrap' >
-                    <span> react js </span> 
-                    <span> next js </span> 
-                    <span> framer motion </span> 
+                  {tech.map((e: string, i: number) => <span>{e}</span>)}
                 </div>
 
             </div>

@@ -13,7 +13,7 @@ const Socials = () => {
     <motion.div variants={fadeTop} {...motionStep} id="__social" className='fixed z-[999] bottom-0 left-[40px] hidden xl:block' >
         <ul className='space-y-6 after:h-[90px] after:w-[1px] after:bg-slate-400 after:block after:mx-auto after:mt-6' > 
            {socialData.map((e: SocialTypes, i: number) => 
-              <li>
+              <li key={i} >
                 <Link 
                    href={e.url} 
                    target='_blank'

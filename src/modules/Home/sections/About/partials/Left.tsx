@@ -20,7 +20,7 @@ const Left = () => {
         <div className='__skills md:pr-56' >
            <ul className='grid grid-cols-2 space-y-2' >
               {skills.map((e: string, i: number) => (
-                <li className='gap-1 flex items-center transition-all duration-300 hover:translate-x-[7px] select-none hover:text-sky-400' > <IoMdArrowDropright className='text-sky-400 text-xl' /> {e}</li> 
+                <li key={i} className='gap-1 flex items-center transition-all duration-300 hover:translate-x-[7px] select-none hover:text-sky-400' > <IoMdArrowDropright className='text-sky-400 text-xl' /> {e}</li> 
               ))}             
            </ul> 
         </div>

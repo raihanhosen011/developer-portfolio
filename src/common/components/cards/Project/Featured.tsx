@@ -46,7 +46,7 @@ const Featured = ({ secondary, live, thumnail, code, title, description, tech } 
                 </div>
 
                 <div className={cx('flex text-slate-400 ml-[8rem] gap-x-4 justify-end flex-wrap', secondary && '!justify-start ml-0 mr-[8rem]')} >
-                    {tech.map((e: string, i: number) => <span>{e}</span>)}
+                    {tech.map((e: string, i: number) => <span key={i} >{e}</span>)}
                 </div>
 
                 <div className={cx('flex justify-end mt-5 gap-3 text-slate-300', secondary && '!justify-start')} >

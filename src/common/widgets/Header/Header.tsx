@@ -57,7 +57,7 @@ const Header = () => {
 
           <motion.ul variants={container} initial="hidden" animate="visible" className='__navright' > 
             {navData.map((e: string, i: number) => 
-              <motion.a  variants={child} href={`#${e.toLocaleLowerCase()}`} ><li> <span>0{i+1}.</span> {e} </li></motion.a>
+              <motion.a key={i}  variants={child} href={`#${e.toLocaleLowerCase()}`} ><li> <span>0{i+1}.</span> {e} </li></motion.a>
             )}
 
             <Link href='/' target='__blank' > <Button > Resume </Button> </Link>

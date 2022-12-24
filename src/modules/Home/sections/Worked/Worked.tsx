@@ -10,7 +10,7 @@ const Worked = () => {
       
       <motion.h1 variants={fadeLeft} {...motionStep} className='flex items-center gap-2 text-3xl font-medium text-slate-300' > 
         <span className='text-sky-400 font-mono' >02. </span>
-        Where I've worked?
+        Where I have worked?
       </motion.h1>
 
       <div className='mt-14' >

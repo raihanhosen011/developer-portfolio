@@ -11,7 +11,7 @@ import { motionStep } from '@config/motion'
 import { ProjectTypes } from '@config/types'
 
 
-const ProjectCard = ({ secondary, live, thumnail, code, title, description, tech } : ProjectTypes) => {
+const ProjectCard = ({ live, thumnail, code, title, description, tech } : ProjectTypes) => {
   return (
         <motion.div 
             variants={{  
@@ -78,7 +78,7 @@ const ProjectCard = ({ secondary, live, thumnail, code, title, description, tech
                 <p className='text-slate-400' > {description}  </p>  
 
                 <div className='flex text-slate-300 mt-7 gap-x-4 flex-wrap' >
-                  {tech.map((e: string, i: number) => <span>{e}</span>)}
+                  {tech.map((e: string, i: number) => <span key={i} >{e}</span>)}
                 </div>
 
             </div>

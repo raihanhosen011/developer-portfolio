@@ -20,7 +20,7 @@ const Projects = () => {
 
         <div className='space-y-20' >
           {projects.filter((e: ProjectTypes) => e.featured == true).map((e: ProjectTypes, i: number) => (
-            <motion.div variants={fadeTop} {...motionStep} >
+            <motion.div key={i} variants={fadeTop} {...motionStep} >
               <Featured {...e} secondary={i % 2 === 0 ? false : true} />
             </motion.div>
           ))} 
@@ -28,7 +28,7 @@ const Projects = () => {
 
         <div className='grid grid-cols-12 gap-6 gap-y-8 my-20' >
           {projects.filter((e: ProjectTypes) => e.featured !== true).map((e: ProjectTypes, i: number) => (
-            <ProjectCard {...e} />
+            <ProjectCard {...e} key={i} />
           ))} 
         </div>
 

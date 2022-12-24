@@ -63,7 +63,7 @@ const Content = () => {
         
         <Pager value={activeIndex} >
           {worked_data.map(({ title, url, company, deadline, description }: WorkedTypes, i: number) => (
-             <div>
+             <div key={i} >
                  <motion.div variants={worked_1} {...motionStep} >
                      <h1 className='text-xl font-medium text-slate-300' > 
                          {title} 
@@ -74,7 +74,7 @@ const Content = () => {
          
                  <ul className='space-y-5 mt-10 max-w-xl' >
                      {description.map((e: string, i: number) => (
-                         <motion.li variants={lAnimation[i]} {...motionStep} className='gap-1 flex text-slate-400 select-none' > 
+                         <motion.li key={i} variants={lAnimation[i]} {...motionStep} className='gap-1 flex text-slate-400 select-none' > 
                              <span className=' min-w-10' ><IoMdArrowDropright className='text-sky-400 text-[1.3rem]' /> </span>
                              {e}
                          </motion.li> 

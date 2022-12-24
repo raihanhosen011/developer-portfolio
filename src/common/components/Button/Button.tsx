@@ -24,7 +24,7 @@ const Button: FC<ButtonProps> = ({
   onClick = () => {},
 }) => {
   const CLASSES = cx(
-     "relative text-white h-auto inline-flex items-center text-[14px] text-slate-800 md:text-[16px] justify-center rounded-full transition-all font-medium bg-sky-300 hover:bg-sky-200 duration-300 ",
+     "relative text-white h-auto inline-flex items-center text-[14px] text-slate-800 md:text-[16px] justify-center rounded-full transition-all font-medium bg-sky-400 hover:bg-sky-300 duration-300 ",
      disabled && '!bg-disable hover:!bg-disable cursor-not-allowed',
      loading && 'cursor-not-allowed !bg-disable hover:!bg-disable',
      fontSize,

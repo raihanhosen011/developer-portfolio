@@ -5,6 +5,8 @@ import Featured from '@components/cards/Project/Featured'
 import ProjectCard from '@components/cards/Project/ProjectCard'
 import Button from '@components/Button'
 import { fadeTop, fadeLeft, motionStep } from '@config/motion'
+import { projects } from '@config/constants'
+import { ProjectTypes } from '@config/types'
 
 
 const Projects = () => {
@@ -17,20 +19,22 @@ const Projects = () => {
         </motion.h1>
 
         <div className='space-y-20' >
-          {[0,1,2,3].map((e: number, i: number) => (
+          {projects.filter((e: ProjectTypes) => e.featured == true).map((e: ProjectTypes, i: number) => (
             <motion.div variants={fadeTop} {...motionStep} >
-              <Featured secondary={e % 2 === 0 ? false : true} />
+              <Featured {...e} secondary={i % 2 === 0 ? false : true} />
             </motion.div>
           ))} 
         </div>
 
         <div className='grid grid-cols-12 gap-6 gap-y-8 my-20' >
-          {[0,1,2,3,4,5,6,7,8].map((e: number, i: number) => <ProjectCard id={i} /> )}
+          {projects.filter((e: ProjectTypes) => e.featured !== true).map((e: ProjectTypes, i: number) => (
+            <ProjectCard {...e} />
+          ))} 
         </div>
 
-        <div className='flex items-center justify-center' >
+        {/* <div className='flex items-center justify-center' >
           <Button outlined > See More </Button>
-        </div>
+        </div> */}
 
     </section>
   )

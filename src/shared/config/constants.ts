@@ -30,7 +30,7 @@ export const projects : ProjectTypes[] = [
 
     {
         title : "Airebix",
-        description : "Airebix is an web development agency website. I use this system for front end “Next js, Tailwind CSS, Axios, Formik, Yup, react-query” and for Backend “Node js, Express js, MongoDB”",
+        description : "Airebix is an web development agency website. ",
         tech : [ "Next js", "tailwind CSS", "Redux", "Node js" ],
         live : 'airebix.com',
         thumnail : "airebix.png",

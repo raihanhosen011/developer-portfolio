@@ -7,18 +7,18 @@ export const fadeUpSpring = {
     y: 0,
     transition: {
       type: "spring",
-      damping: 5,
-      stiffness: 150,
+      damping: 15,
+      stiffness: 60,
     },
   },
 
   hidden: {
     opacity: 0,
-    y: 60,
+    y: 200,
     transition: {
       type: "spring",
-      damping: 5,
-      stiffness: 150,
+      damping: 15,
+      stiffness: 60,
     },
   },
 };
@@ -31,17 +31,17 @@ export const fadeLeft = {
     transition: {
       type: "spring",
       damping: 15,
-      stiffness: 80,
+      stiffness: 50,
     },
   },
 
   hidden: {
     opacity: 0,
-    x: -100,
+    x: -200,
     transition: {
       type: "spring",
       damping: 15,
-      stiffness: 80,
+      stiffness: 50,
     },
   },
 };
@@ -55,17 +55,17 @@ export const fadeBottom = {
     transition: {
       type: "spring",
       damping: 15,
-      stiffness: 80,
+      stiffness: 50,
     },
   },
 
   hidden: {
     opacity: 0,
-    y: -100,
+    y: -200,
     transition: {
       type: "spring",
       damping: 15,
-      stiffness: 80,
+      stiffness: 50,
     },
   },
 };
@@ -79,17 +79,17 @@ export const fadeRight = {
     transition: {
       type: "spring",
       damping: 15,
-      stiffness: 80,
+      stiffness: 50,
     },
   },
 
   hidden: {
     opacity: 0,
-    x: 100,
+    x: 200,
     transition: {
       type: "spring",
       damping: 15,
-      stiffness: 80,
+      stiffness: 50,
     },
   },
 };
@@ -103,7 +103,54 @@ export const fadeTop = {
     transition: {
       type: "spring",
       damping: 15,
-      stiffness: 80,
+      stiffness: 50,
+    },
+  },
+
+  hidden: {
+    opacity: 0,
+    y: 200,
+    transition: {
+      type: "spring",
+      damping: 15,
+      stiffness: 50,
+    },
+  },
+};
+
+
+// worked li
+export const worked_1 = {
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "spring",
+      damping: 15,
+      stiffness: 50,
+    },
+  },
+
+  hidden: {
+    opacity: 0,
+    y: 50,
+    transition: {
+      type: "spring",
+      damping: 15,
+      stiffness: 50,
+    },
+  },
+};
+
+
+export const worked_2 = {
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "spring",
+      damping: 15,
+      stiffness: 50,
     },
   },
 
@@ -113,12 +160,33 @@ export const fadeTop = {
     transition: {
       type: "spring",
       damping: 15,
-      stiffness: 80,
+      stiffness: 50,
     },
   },
 };
 
 
+export const worked_3 = {
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "spring",
+      damping: 15,
+      stiffness: 50,
+    },
+  },
+
+  hidden: {
+    opacity: 0,
+    y: 150,
+    transition: {
+      type: "spring",
+      damping: 15,
+      stiffness: 50,
+    },
+  },
+};
 
 
 // inital step

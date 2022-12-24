@@ -1,15 +1,17 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 //
 import Content from './partials/Content'
+import { fadeLeft, motionStep } from '@config/motion'
 
-const About = () => {
+const Worked = () => {
   return (
-    <section>
+    <section id='experience' >
       
-      <h1 className='flex items-center gap-2 text-3xl font-medium text-slate-300' > 
+      <motion.h1 variants={fadeLeft} {...motionStep} className='flex items-center gap-2 text-3xl font-medium text-slate-300' > 
         <span className='text-sky-400 font-mono' >02. </span>
         Where I've worked?
-      </h1>
+      </motion.h1>
 
       <div className='mt-14' >
         <Content /> 
@@ -19,4 +21,4 @@ const About = () => {
   )
 }
 
-export default About
+export default Worked

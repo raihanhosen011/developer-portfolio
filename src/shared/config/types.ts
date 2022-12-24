@@ -17,3 +17,15 @@ export type ButtonProps = {
     onClick?: () => void;
     children?: ReactNode;
 };
+
+// project data types
+export type ProjectTypes = {
+    id: number,
+    title : string,
+    description ?: string,
+    tech : Array<string>,
+    code ?: string,
+    live : string,
+    thumnail : string,
+    featured ?: boolean,
+}

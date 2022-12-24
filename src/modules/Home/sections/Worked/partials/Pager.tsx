@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 function Pager({ children, value } : { children: ReactNode, value: number }) {
   return (
-    <div className="flex flex-col overflow-hidden w-full" >
+    <div className="flex flex-col overflow-x-hidden w-full" >
       <motion.div
         className="flex flex-1 will-change-transform"
         transition={{
@@ -20,7 +20,7 @@ function Pager({ children, value } : { children: ReactNode, value: number }) {
             key={i}
             aria-hidden={value !== i}
             tabIndex={value === i ? 0 : -1}
-            className='flex flex-col w-full items-stretch justify-start flex-shrink-0 overflow-hidden outline-none'
+            className='flex flex-col w-full items-stretch justify-start flex-shrink-0 overflow-x-hidden outline-none'
           >
             {child}
           </div>

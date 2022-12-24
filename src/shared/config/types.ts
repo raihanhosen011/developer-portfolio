@@ -20,7 +20,6 @@ export type ButtonProps = {
 
 // project data types
 export type ProjectTypes = {
-    id: number,
     title : string,
     description ?: string,
     tech : Array<string>,
@@ -28,4 +27,5 @@ export type ProjectTypes = {
     live : string,
     thumnail : string,
     featured ?: boolean,
+    secondary ?: boolean,
 }

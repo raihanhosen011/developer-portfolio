@@ -3,7 +3,10 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   experimental:{
-    appDir: true
+    appDir: true,
+    runtime: "nodejs", 
+    serverComponents: true, 
+    concurrentFeatures: true 
   }
 }
 

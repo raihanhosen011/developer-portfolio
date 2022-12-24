@@ -4,6 +4,7 @@ import { Urbanist } from '@next/font/google';
 import Mail from '@widgets/Mail';
 import Glassify from '@components/Glassify';
 import Socials from '@widgets/Socials';
+import Header from '@widgets/Header';
 //
 import '../shared/styles/globals.css'
 
@@ -24,6 +25,7 @@ export default function RootLayout({
         <Mail />
         <Glassify />
 
+        <Header />
         {children}
       
       </body>

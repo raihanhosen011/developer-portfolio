@@ -1,17 +1,42 @@
 import React from 'react'
 import Link from 'next/link'
+import { motion } from 'framer-motion'
 import Image from 'next/legacy/image'
 //
 import { RiFilePaperLine } from 'react-icons/ri'
 import { HiOutlineExternalLink } from 'react-icons/hi'
 import { FiGithub } from 'react-icons/fi'
+//
+import { motionStep } from '@config/motion'
 
 
-const ProjectCard = () => {
-
-  
+const ProjectCard = ({ id } : { id: number }) => {
   return (
-        <div className='col-span-4 bg-slate-800 rounded-xl p-4 group' >
+        <motion.div 
+            variants={{  
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: {
+                  type: "spring",
+                  damping: 15,
+                  stiffness: 50,
+                },
+              },
+            
+              hidden: {
+                opacity: 0,
+                y: 50,
+                transition: {
+                  type: "spring",
+                  damping: 15,
+                  stiffness: id * 20 + 50,
+                },
+              },
+            }}
+            {...motionStep}
+            className='col-span-4 bg-slate-800 rounded-xl p-4 group' 
+        >
             <div>
                     <Link href='/' >
                         <div className='h-[200px] w-full relative rounded-xl overflow-hidden'>
@@ -58,7 +83,7 @@ const ProjectCard = () => {
                 </div>
 
             </div>
-        </div>     
+        </motion.div>     
   )
 }
 

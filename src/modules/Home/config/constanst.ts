@@ -1,2 +1,2 @@
 // skill list
-export const skills = [ "HTML", "CSS", "Javascript", "Typescript", "HTML", "CSS", "Javascript", "Typescript", ]
+export const skills = [ "Typescript", "Reac js", "Next js", "Tailwind CSS", "Material UI", "Firebase", "Node js", "Express js", "MongoDB", "Socket.io", "webRtc" ]

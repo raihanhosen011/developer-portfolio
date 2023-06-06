@@ -15,10 +15,10 @@ const GetInTouch = () => {
         <h1 className='font-medium text-slate-300 text-4xl text-center mt-5' > Get In Touch </h1>
 
         <p className='text-slate-400 max-w-[500px] mx-auto my-3 mb-10' >
-           Although I’m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+           Even though I'm not actively seeking new opportunities at the moment, I'm always happy to connect. Whether you have a question, want to discuss a potential collaboration, or simply want to say hello, feel free to reach out. I'll do my best to respond promptly and engage in meaningful conversations!
         </p>
 
-        <Button href='mailto:raihanhosen011@gmail.com' outlined > Say Hello </Button>
+        <Button href='mailto:raihanhosen011@gmail.com' outlined > Say Hello 👋 </Button>
 
     </section>
   )

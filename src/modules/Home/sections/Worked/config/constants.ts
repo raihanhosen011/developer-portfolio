@@ -4,6 +4,19 @@ import { WorkedTypes } from './types';
 export const worked_data : WorkedTypes[] = [
    { 
       id: 0,
+      label : "Upsoul Digital",
+      description : [
+         "Founded and established Upsoul Digital, a forward-thinking digital agency focused on delivering innovative web solutions",
+         "Led a talented team of developers and designers, fostering a collaborative and creative work environment",
+         "Implemented strategic vision and direction, driving the growth and success of the agency",
+      ],
+      deadline : "March 22 - Jan 22",
+      title: "CEO & Founder",
+      company : "Upsoul Digital",
+      url : "https://upsoul.digital",
+   },
+   { 
+      id: 1,
       label : "Digital Gregg",
       description : [
         "Write modern, performant, maintainable code for a diverse array of client and internal projects",
@@ -16,7 +29,7 @@ export const worked_data : WorkedTypes[] = [
       url : "https://digitalgregg.com",
    },
    { 
-      id: 1,
+      id: 2,
       label : "Fiverr",
       description : [
         "Write modern, performant, maintainable code for a diverse array of client and internal projects",
@@ -29,7 +42,7 @@ export const worked_data : WorkedTypes[] = [
       url : "https://fiverr.com/raihanhosen001",
    },
    { 
-      id: 2,
+      id: 3,
       label : "Upwork",
       description : [
         "Write modern, performant, maintainable code for a diverse array of client and internal projects",

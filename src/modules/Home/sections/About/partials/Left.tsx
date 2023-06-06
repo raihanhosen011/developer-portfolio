@@ -12,8 +12,10 @@ const Left = () => {
 
       <div className='space-y-4 mt-7 text-slate-400' >
 
-        <p>Hello! My name is Raihan and I enjoy creating things that live on the internet. My interest in web development started back in 2020 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!</p>
-        <p>Fast-forward to today, and I’ve had the privilege of working at an advertising agency, a start-up, a huge corporation, and a student-led design studio. My main focus these days is building accessible, inclusive products and digital experiences at Upstatement for a variety of clients.</p>
+        <p> Hello! I'm Raihan, a passionate web developer who loves creating captivating experiences on the internet. My journey into web development began in 2020 when I started experimenting with customizing Tumblr themes. Through tinkering with HTML and CSS, even something as simple as editing a reblog button, I discovered my fascination for building things online.</p>
+        <p>Since then, I've had the incredible opportunity to work in diverse environments, including an advertising agency, a start-up, a large corporation, and a student-led design studio. These experiences have shaped my expertise in crafting accessible and inclusive products and digital experiences. Currently, I'm thrilled to be a part of Upstatement, where I collaborate with a range of clients to bring their visions to life.</p>
+        <p> I believe in the power of the web to connect people and create meaningful interactions. With a keen eye for detail and a commitment to user-centric design, I strive to deliver exceptional web solutions that leave a lasting impact. </p>
+        <p> Let's collaborate and turn your ideas into remarkable digital experiences! </p>
 
         <p>Here are a few technologies I’ve been working with recently:</p>
 

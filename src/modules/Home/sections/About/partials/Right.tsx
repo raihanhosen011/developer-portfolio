@@ -19,7 +19,7 @@ const Right = () => {
             alt='loading...' 
          />
          
-         <div className='absolute rounded-xl z-50 top-0 bottom-0 right-0 left-0 bg-sky-700/25 hover:bg-transparent transition-all duration-200 cursor-pointer' />
+         <div className='absolute rounded-xl z-50 top-0 bottom-0 right-0 left-0 bg-sky-700/10 hover:bg-transparent transition-all duration-200 cursor-pointer' />
       </div> 
     </motion.div>
   )

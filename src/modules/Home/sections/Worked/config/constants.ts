@@ -10,7 +10,7 @@ export const worked_data : WorkedTypes[] = [
          "Led a talented team of developers and designers, fostering a collaborative and creative work environment",
          "Implemented strategic vision and direction, driving the growth and success of the agency",
       ],
-      deadline : "March 22 - Jan 22",
+      deadline : "Feb 23",
       title: "CEO & Founder",
       company : "Upsoul Digital",
       url : "https://upsoul.digital",

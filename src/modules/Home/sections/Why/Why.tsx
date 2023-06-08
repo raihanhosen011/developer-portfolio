@@ -30,7 +30,7 @@ const Why = () => {
       </motion.h1>
 
       <motion.div variants={fadeLeft} {...motionStep} className='cols-span-2 lg:block hidden mt-10' >
-        <div className='w-full md:max-w-[800px] relative group rounded-xl after:transition-all after:duration-200 after:hover:left-[12px] after:hover:top-[12px] after:w-full after:z-30 after:h-full after:border-[2px] after:absolute after:top-[20px] after:left-[20px] after:rounded-xl after:border-sky-500' >
+        <div className='w-full md:max-w-[800px] relative group rounded-xl overflow-hidden after:transition-all after:duration-200 after:hover:left-[12px] after:hover:top-[12px] after:w-full after:z-30 after:h-full after:border-[2px] after:absolute after:top-[20px] after:left-[20px] after:rounded-xl after:border-sky-500' >
           <YouTube
             videoId={'yOHVhzaeArU'}
             className='w-full rounded-xl border-[3px] border-sky-900 transition-all duration-200 group-hover:translate-y-[2px] group-hover:translate-x-[2px] relative z-[9999]'

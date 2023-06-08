@@ -24,7 +24,7 @@ const Why = () => {
     <section id='why' >
 
       <motion.h1 variants={fadeLeft} {...motionStep} className='flex items-center gap-2 text-3xl font-medium text-slate-300' >
-        <span className='text-sky-400 font-mono' >01. </span>
+        <span className='text-sky-400 font-mono' >00. </span>
         Why people love to work with Raihan?
       </motion.h1>
 

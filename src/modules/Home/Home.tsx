@@ -6,6 +6,7 @@ import Hero from './sections/Hero'
 import Projects from './sections/Projects'
 import Worked from './sections/Worked'
 import Footer from '@widgets/Footer'
+import Why from './sections/Why/Why'
 
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
     <>
 
       <Hero />
+      <Why />
       <About />
       <Worked />
       <Projects />

@@ -9,9 +9,9 @@ import { fadeLeft, motionStep } from '@config/motion'
 
 const About = () => {
   return (
-    <section id='about' >
+    <section id='about' className='container' >
       
-      <motion.h1 variants={fadeLeft} {...motionStep} className='flex items-center gap-2 text-3xl font-medium text-slate-300' > 
+      <motion.h1 variants={fadeLeft} {...motionStep} className='flex items-center gap-2 text-lg md:text-3xl font-medium text-slate-300' > 
         <span className='text-sky-400 font-mono' >01. </span>
         About me 
       </motion.h1>

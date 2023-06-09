@@ -41,7 +41,7 @@ const Header = () => {
   };
 
   return (
-    <header className='top-0 w-full z-50 relative py-[30px] max-w-[94%] mx-auto md:block hidden right-0 left-0' >
+    <header className='top-0 w-full z-50 relative py-[30px] mx-auto right-0 left-0 container' >
        <div className='flex items-center justify-between' >
 
           <Link href='/' className='flex' >
@@ -56,8 +56,9 @@ const Header = () => {
           </Link>
 
           <motion.ul variants={container} initial="hidden" animate="visible" className='__navright' > 
+            
             {navData.map((e: string, i: number) => 
-              <motion.a key={i}  variants={child} href={`#${e.toLocaleLowerCase()}`} ><li> <span>0{i+1}.</span> {e} </li></motion.a>
+              <motion.a key={i}  variants={child} className='hidden md:block' href={`#${e.toLocaleLowerCase()}`} ><li> <span>0{i+1}.</span> {e} </li></motion.a>
             )}
 
             <Link href='/' target='__blank' > <Button > Resume </Button> </Link>

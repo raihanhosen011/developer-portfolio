@@ -16,16 +16,16 @@ const Left = () => {
         <div className='relative' >
             <AnimatedTextWord 
                text="Hi, my name is"
-               className='text-lg'
+               className='text-lg justify-center lg:justify-start'
             />
             
             <div>
                <AnimatedTextCharacter 
-                  className='!font-medium !bg-clip-text !text-5xl !leading-normal md:!text-7xl md:!leading-[87px] !text-slate-300' 
+                  className='!font-medium !bg-clip-text !text-[2rem] !leading-normal md:!text-7xl md:!leading-[87px] !text-slate-300 justify-center lg:justify-start' 
                   text="Raihan Hosen." 
                />
                <AnimatedTextCharacter 
-                  className='font-medium text-2xl sm:text-[1.6rem] tracking-normal md:text-[2rem] text-slate-400 mt-1' 
+                  className='font-medium text-sm sm:text-[1.6rem] tracking-normal md:text-[2rem] text-slate-400 mt-1 justify-center lg:justify-start' 
                   text="Who Transform Ideas into Web Wonders" 
                />
             </div>
@@ -33,11 +33,12 @@ const Left = () => {
             <div className='my-5 md:my-8 leading-7 text-slate-400 md:text-lg max-w-3xl' >
                <AnimatedTextWord 
                   text="Highly motivated and very passionate Full Stack Developer with three years of experience in Typescript, React js, Next js, Firebase, Tailwind CSS, Material UI, Node js, Express js, MongoDB"
+                  className='text-sm sm:text-lg justify-center lg:justify-start'
                />
             </div>
         </div>
 
-        <motion.div variants={fadeUpSpring}  initial="hidden" animate="visible" >
+        <motion.div variants={fadeUpSpring}  initial="hidden" animate="visible" className='w-fit mx-auto lg:ml-0' >
            <a href='#works' ><Button outlined > Check out my projects </Button></a>
         </motion.div>
     

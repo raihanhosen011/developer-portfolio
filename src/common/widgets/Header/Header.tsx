@@ -42,7 +42,7 @@ const Header = () => {
 
   return (
     <header className='top-0 w-full z-50 relative py-[30px] mx-auto right-0 left-0 container' >
-       <div className='flex items-center justify-between' >
+       <div className='flex items-center justify-center md:justify-between' >
 
           <Link href='/' className='flex' >
              <AnimatedTextCharacter 

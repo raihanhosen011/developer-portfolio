@@ -36,7 +36,7 @@ const ProjectCard = ({ live, thumnail, code, title, description, tech } : Projec
               },
             }}
             {...motionStep}
-            className='col-span-12 sm:col-span-6 md:col-span-4 bg-slate-800 rounded-xl p-4 group' 
+            className='col-span-12 sm:col-span-6 md:col-span-4 bg-slate-800 rounded-xl p-4 group ' 
         >
             <div>
                     <Link href={`${live}`} >

@@ -26,7 +26,7 @@ const Projects = () => {
           ))} 
         </div>
 
-        <div className='grid grid-cols-12 gap-6 gap-y-8 my-20' >
+        <div className='grid grid-cols-8 2xl:grid-cols-12 gap-6 gap-y-8 my-20' >
           {projects.filter((e: ProjectTypes) => e.featured !== true).map((e: ProjectTypes, i: number) => (
             <ProjectCard {...e} key={i} />
           ))} 

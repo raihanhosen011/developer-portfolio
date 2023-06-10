@@ -45,7 +45,7 @@ const Featured = ({ secondary, live, thumnail, code, title, description, tech } 
                     <p> {description && description} </p>
                 </div>
 
-                <div className={cx('flex text-slate-400 sm:ml-[8rem] gap-x-4 justify-end flex-wrap', secondary && '!justify-start ml-0 mr-[8rem]')} >
+                <div className={cx('flex text-slate-400 gap-x-4 justify-end flex-wrap', secondary && '!justify-start ml-0 mr-[8rem]')} >
                     {tech.map((e: string, i: number) => <span key={i} >{e}</span>)}
                 </div>
 
@@ -67,7 +67,7 @@ const Featured = ({ secondary, live, thumnail, code, title, description, tech } 
 
 
   return (
-    <div className='relative grid grid-cols-12 items-center gap-3 group' >
+    <div className='relative grid grid-cols-12 items-center gap-3 group ' >
        {secondary ? 
           <>
             {__renderContent()}

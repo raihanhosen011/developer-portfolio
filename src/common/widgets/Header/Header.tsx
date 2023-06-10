@@ -61,7 +61,7 @@ const Header = () => {
               <motion.a key={i}  variants={child} className='hidden md:block' href={`#${e.toLocaleLowerCase()}`} ><li> <span>0{i+1}.</span> {e} </li></motion.a>
             )}
 
-            <Link href='/' target='__blank' > <Button > Resume </Button> </Link>
+            {/* <Link href='/' target='__blank' > <Button > Resume </Button> </Link> */}
           </motion.ul>
 
        </div>

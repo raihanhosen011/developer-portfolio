@@ -13,7 +13,7 @@ const Featured = ({ secondary, live, thumnail, code, title, description, tech } 
   
   const __renderImage = () => {
      return (
-        <div className='col-span-7 relative hidden sm:block' >
+        <div className='col-span-12 sm:col-span-7 relative ' >
             <Link href={`${live}`} >
                 <div className='h-[350px] w-full relative rounded-xl overflow-hidden'>
                     <Image 
@@ -36,16 +36,16 @@ const Featured = ({ secondary, live, thumnail, code, title, description, tech } 
 
   const __renderContent = () => {
     return (
-        <div className={cx('col-span-12 sm:col-span-5 text-right sm:absolute sm:left-[50%]', secondary && '!relative z-[100] !left-0 !text-start sm:w-[120%]')} >
+        <div className={cx('col-span-12 sm:col-span-5 text-right sm:absolute sm:left-[50%] ', secondary && '!relative z-[100] !left-0 !text-start sm:w-[120%]')} >
             <div>
                 <p className='text-sky-400' > Featured </p>
                 <h1 className='text-3xl font-medium text-slate-300' > {title} </h1>
 
-                <div className='my-6 p-6 bg-slate-800 text-slate-300 shadow-xl rounded-xl' >
+                <div className='my-6 p-6 bg-slate-800 text-slate-300 shadow-xl rounded-xl hidden sm:block' >
                     <p> {description && description} </p>
                 </div>
 
-                <div className={cx('flex text-slate-400 gap-x-4 justify-end flex-wrap', secondary && '!justify-start ml-0 mr-[8rem]')} >
+                <div className={cx('flex text-slate-400 gap-x-4 justify-end flex-wrap', secondary && '!justify-start ml-0')} >
                     {tech.map((e: string, i: number) => <span key={i} >{e}</span>)}
                 </div>
 
